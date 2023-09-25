@@ -24,7 +24,7 @@
         </ul>
     </nav>
 
-    <!-- ----------------------------------Agile---------------------------------------- -->
+    <!-- -----------------------------------Agile----------------------------------- -->
     <div class="Agcontent" id="agile-section">
 
         <div class="agtext">
@@ -43,7 +43,7 @@
     </div>
 
     <div class="divid" id="manifest-section"></div>
-    <!-- -------------------------------Agile manifesto------------------------------------------------ -->
+    <!-- -------------------------------------Agile manifesto------------------------------------- -->
     <div class="manifdiv">
 
         <div class="agmaim">
@@ -64,7 +64,7 @@
     </div>
 
     <div class="divid"></div>
-    <!-- -------------------------------agile principes------------------------------------ -->
+    <!-- ------------------------------------agile principes------------------------------------ -->
     <div class="agprdiv" id="agpr-section">
 
 
@@ -125,7 +125,7 @@
     </div>
 
     <div class="divid"></div>
-    <!-- -------------------------------------Lean & mu's---------------------------------------- -->
+    <!-- ---------------------------------------Lean & mu's--------------------------------------- -->
     <div class="lemudiv" id="lemu-section">
         
         <div class="lemum">
@@ -138,8 +138,8 @@
             <h1>Lean en de drie Mu's</h1>
                 <p>
                     Zorgen dat de maximale waarde wordt geleverd zonder extra onnodig werk te doen wordt
-                     <strong>lean</strong> genoemd. Deze manier van werken is bedacht om de
-                     <strong>drie Mu's</strong> te voorkomen. <br>Dit zijn:
+                    <strong>lean</strong> genoemd. Deze manier van werken is bedacht om de
+                    <strong>drie Mu's</strong> te voorkomen. <br>Dit zijn:
                 </p>
     <?php
             $driemus = [
@@ -164,14 +164,14 @@
 
             </section>
     
-</div>
-</div>
+        </div>
+    </div>
 
 <div class="divid"></div>
-<!-- -------------------------------------Lean & mu's end------------------------------------ -->
+<!-- ------------------------------------Lean & mu's end------------------------------------ -->
 
 
-<!-- ----------------------------------------Scrum--------------------------------------- -->
+<!-- ---------------------------------------Scrum--------------------------------------- -->
 
 <div class="scrumdiv" id="scrum-section">
 
@@ -179,21 +179,24 @@
             <h1>Scrum</h1>
 
             <p>
-               Scrum is een <strong>Agile-framework</strong> het gaat erom dat er veranderingen gemaakt kunnen
-               worden op basis van de feedback van de klanten. Dit is mogelijk doordat er bij scrum regelmatige
-               werkende stukjes software worden geleverd.
-                    
+                Scrum is een <strong>Agile-framework</strong> het gaat erom dat er veranderingen gemaakt kunnen
+                worden op basis van de feedback van de klanten. Dit is mogelijk doordat er bij scrum regelmatige
+                werkende stukjes software worden geleverd. <br> Deze stukjes software zijn in de sprint voltooid en 
+                worden het <strong>increment</strong> genoemd. Het moet hiervoor ook voldoen aan de <strong>
+                definition van done</strong>, dat is waaraan het product moet voldoen om te worden gezien als
+                klaar (done).
             </p>
         </div>
         <div class="scrumfoto">
         <img class="scrumfot" src="scrum.png" alt="scrum">
-
         </div>
+
     </div>
 
     <div class="divid"></div>
-    <!-- -------------------------------Scrum end------------------------------------------------ -->
+    <!-- --------------------------------------Scrum end-------------------------------------- -->
 <script src="script.js"></script>
 </body>
 
 </html>
+<!-- trailhead salvesforce -->
