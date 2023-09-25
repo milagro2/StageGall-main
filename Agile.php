@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="agile-header">
+    <header class="agile-header" id="page-top">
         <h1>Agile - Scrum</h1>
     </header>
 
@@ -179,11 +179,11 @@
             <h1>Scrum</h1>
 
             <p>
-               
+               Scrum is een <strong>Agile-framework</strong> 
             </p>
         </div>
         <div class="scrumfoto">
-        <img class="scrumfot" src="agile.png" alt="scrum">
+        <img class="scrumfot" src="scrum.png" alt="scrum">
 
         </div>
     </div>

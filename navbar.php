@@ -8,6 +8,9 @@ $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
         <li><a href="stageVerslag.php" <?php if ($current_page == "stageVerslag.php") echo 'class="active"'; ?>>Stage-Verslag</a></li>
         <li><a href="CICD.php" <?php if ($current_page == "CICD.php") echo 'class="active"'; ?>>CICD</a></li>
         <li><a href="about.php" <?php if ($current_page == "about.php") echo 'class="active"'; ?>>About</a></li>
-
+   
+    </ul>
+    <ul class="right-nav">
+        <li><a href="#page-top">Page-top</a></li>
     </ul>
 </nav>
