@@ -150,7 +150,7 @@ html {
 
 .agim {
     flex: 1;
-    margin-right: 17%;
+    margin-right: 9%;
 }
 
 .agtext {
@@ -171,7 +171,7 @@ html {
 }
 
 .agilefot {
-    max-width: 250%;
+    max-width: 140%;
     height: auto;
 }
 
@@ -179,8 +179,7 @@ html {
 
 .divid {
     width: auto;
-    padding: 4% 0 0 0;
-    outline: 4px solid #9e9e9ea3;
+    padding: 5% 0 0 0;
     background-color: #9e9e9ea3;
 }
 /* agile-manifesto part ----------------------------------------------------*/

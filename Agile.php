@@ -37,7 +37,7 @@
             </p>
         </div>
         <div class="agim">
-        <img class="manifot" src="agile.png" alt="agile">
+        <img class="agilefot" src="agile2.webp" alt="agile">
 
         </div>
     </div>
@@ -179,7 +179,10 @@
             <h1>Scrum</h1>
 
             <p>
-               Scrum is een <strong>Agile-framework</strong> 
+               Scrum is een <strong>Agile-framework</strong> het gaat erom dat er veranderingen gemaakt kunnen
+               worden op basis van de feedback van de klanten. Dit is mogelijk doordat er bij scrum regelmatige
+               werkende stukjes software worden geleverd.
+                    
             </p>
         </div>
         <div class="scrumfoto">
