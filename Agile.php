@@ -19,6 +19,8 @@
             <li><a href="#agile-section">Agile</a></li>
             <li><a href="#manifest-section">Agile Manifesto</a></li>
             <li><a href="#agpr-section">Agile Principes</a></li>
+            <li><a href="#lemu-section">Lean & Mu's</a></li>
+            <li><a href="#scrum-section">Scrum</a></li>
         </ul>
     </nav>
 
@@ -123,10 +125,72 @@
     </div>
 
     <div class="divid"></div>
-    <!-- -------------------------------------------------------------------------------- -->
+    <!-- -------------------------------------Lean & mu's---------------------------------------- -->
+    <div class="lemudiv" id="lemu-section">
+        
+        <div class="lemum">
+            <img class="lemufot" src="3mus.png" alt="drie Mu's">
+            
+        </div>
+        
+        <div class="lemutext">
+            
+            <h1>Lean en de drie Mu's</h1>
+                <p>
+                    Zorgen dat de maximale waarde wordt geleverd zonder extra onnodig werk te doen wordt
+                     <strong>lean</strong> genoemd. Deze manier van werken is bedacht om de
+                     <strong>drie Mu's</strong> te voorkomen. <br>Dit zijn:
+                </p>
+    <?php
+            $driemus = [
+                "<strong>Muda</strong> staat voor <strong>verspilling</strong>, het zijn activiteiten of processen 
+                die geen waarde toevoegen aan het product of de klant. ",
+
+                "<strong>Mura</strong> staat voor <strong>ongelijkheid</strong>, dus als er bijvoorbeeld het ene
+                moment veel meer werk is dan op het andere moment.",
+
+                "<strong>Muri</strong> staat voor <strong>overbelasting</strong>, dus wanneer er meer werk wordt
+                verwacht dan mogelijk is wat voor stress kan zorgen."
+            ];
+            ?>
+
+            <section class="driemus">
+
+                <ol>
+                    <?php foreach ($driemus as $mu) : ?>
+                        <li><?= $mu; ?></li>
+                    <?php endforeach; ?>
+                </ol>
+
+            </section>
+    
+</div>
+</div>
+
+<div class="divid"></div>
+<!-- -------------------------------------Lean & mu's end------------------------------------ -->
 
 
-    <script src="script.js"></script>
+<!-- ----------------------------------------Scrum--------------------------------------- -->
+
+<div class="scrumdiv" id="scrum-section">
+
+        <div class="sctext">
+            <h1>Scrum</h1>
+
+            <p>
+               
+            </p>
+        </div>
+        <div class="scrumfoto">
+        <img class="scrumfot" src="agile.png" alt="scrum">
+
+        </div>
+    </div>
+
+    <div class="divid"></div>
+    <!-- -------------------------------Scrum end------------------------------------------------ -->
+<script src="script.js"></script>
 </body>
 
 </html>
