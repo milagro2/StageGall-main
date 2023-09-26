@@ -184,7 +184,7 @@
                 werkende stukjes software worden geleverd. <br> Deze stukjes software zijn in de sprint voltooid en 
                 worden het <strong>increment</strong> genoemd. Het moet hiervoor ook voldoen aan de <strong>
                 definition van done</strong>, dat is waaraan het product moet voldoen om te worden gezien als
-                klaar (done).
+                klaar (done). 
             </p>
         </div>
         <div class="scrumfoto">
