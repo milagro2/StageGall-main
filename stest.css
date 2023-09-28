@@ -454,6 +454,51 @@ html {
     background-color: #f5f5f5;
     border-radius: 15px;
 }
+/* CI/CD part end ------------------------------------------------ */
+
+/* CI/CD part ---------------------------------------------------- */
+.cicddiv {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    margin: 5%;
+}
+
+.cicdfoto {
+    flex: 1;
+    margin-right: 17%;
+}
+
+.cctext {
+    flex: 2;
+    margin: 0px 30% 0px 0%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 2% 3%;
+}
+
+.cicddiv h1 {
+    font-size: 2vw;
+}
+
+.cicddiv h2 {
+    font-size: 1.7vw;
+}
+
+.cicddiv p {
+    font-size: 1.3vw;
+    margin-top: 1%;
+}
+
+.cicdfot {
+    max-width: 175%;
+    height: auto;
+    padding: 5%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+
 
 /* end ci/cd part-------------------------------------- */
 
@@ -490,6 +535,13 @@ html {
     background-color: #f5f5f5;
     border-radius: 15px;
 }
+
+.benefits-div ul {
+    list-style-type: circle;
+    padding-left: 3%;
+    font-size: 1.3vw;
+}
+
 /* end benefs part---------------------------------- */
 
 /* tools part--------------------------------------- */
@@ -516,6 +568,9 @@ html {
 
 .tools-div h1 {
     font-size: 2vw;
+}
+.tools-div p {
+    font-size: 1.3vw;
 }
 
 .tools-image {
