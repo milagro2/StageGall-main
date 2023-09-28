@@ -74,7 +74,7 @@
             <?php
             $agilePrinciples = [
                 "De hoogste prioriteit is het <strong>tevreden houden van de klanten</strong> door vroege en
-                 regelmatige levering van waardevolle software.",
+                regelmatige levering van waardevolle software.",
 
                 "<strong>Reageren op de steeds veranderende eisen</strong> van de klanten",
 

@@ -361,10 +361,172 @@ html {
     background-color: #f5f5f5;
     border-radius: 15px;
 }
-
-
-
-
 /* end scrum part --------------------------------------------- */
 
+
+
+
+
+
+
+/* test area-------------------------------------------------------------------------------------- */
+.devops-header {
+    background: linear-gradient(to right, #0044cc, #3388ff, #0044cc);
+    color: #ffffff;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.3vw;
+    transition: padding 0.3s;
+}
+
+/* DevOps content style */
+.DevOps-content {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    margin: 5%;
+}
+
+.devops-img {
+    flex: 1;
+    margin-right: 9%;
+    
+}
+
+.devops-text {
+    flex: 2;
+    margin: 0px 30% 0px 0%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 2% 3%;
+}
+
+.DevOps-content h1 {
+    font-size: 2vw;
+}
+
+.DevOps-content p {
+    font-size: 1.3vw;
+}
+
+.devops-image {
+    max-width: 140%;
+    height: auto;
+    padding: 5%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+/* CI/CD part----------------------------------------------------- */
+.ci-cd-div {
+    display: flex;
+    align-items: center;
+    padding: 6% 3%;
+    margin: 5%;
+    text-align: right;
+}
+
+.ci-cd-img {
+    flex: 1;
+    margin-right: 17%;
+}
+
+.ci-cd-text {
+    flex: 2;
+    margin: 0px 30% 0px 0%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 2% 3%;
+}
+
+.ci-cd-div h1 {
+    font-size: 2vw;
+}
+
+.ci-cd-div p {
+    font-size: 1.3vw;
+}
+
+.ci-cd-image {
+    max-width: 175%;
+    height: auto;
+    padding: 5%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+/* end ci/cd part-------------------------------------- */
+
+/* benefs part----------------------------------------- */
+.benefits-div {
+    display: flex;
+    align-items: center;
+    padding: 6% 3%;
+    margin: 5%;
+    text-align: right;
+}
+
+.benefits-text {
+    flex: 2;
+    margin: 0px 30% 0px 0%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 2% 3%;
+}
+
+.benefits-div h1 {
+    font-size: 2vw;
+}
+
+.benefits-img {
+    flex: 1;
+    margin-right: 17%;
+}
+
+.benefits-image {
+    max-width: 175%;
+    height: auto;
+    padding: 5%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+/* end benefs part---------------------------------- */
+
+/* tools part--------------------------------------- */
+.tools-div {
+    display: flex;
+    align-items: center;
+    padding: 6% 3%;
+    margin: 5%;
+    text-align: right;
+}
+
+.tools-img {
+    flex: 1;
+    margin-right: 17%;
+}
+
+.tools-text {
+    flex: 2;
+    margin: 0px 30% 0px 0%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 2% 3%;
+}
+
+.tools-div h1 {
+    font-size: 2vw;
+}
+
+.tools-image {
+    max-width: 175%;
+    height: auto;
+    padding: 5%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+/* end tools part--------------------------------------- */
+
+/* test area end---------------------------------------------------------------------------------- */
 /* outline: 4px solid #ff000042; */
