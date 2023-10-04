@@ -14,7 +14,8 @@
     </header>
 
     <?php include 'navbar.php' ?>
-    <nav class="sub-navbar">
+    <div class="sticky-block">
+        <p>Onderdelen</p>
         <ul>
             <li><a href="#agile-section">Agile</a></li>
             <li><a href="#manifest-section">Agile Manifesto</a></li>
@@ -22,7 +23,7 @@
             <li><a href="#lemu-section">Lean & Mu's</a></li>
             <li><a href="#scrum-section">Scrum</a></li>
         </ul>
-    </nav>
+    </div>
 
     <!-- -----------------------------------Agile----------------------------------- -->
     <div class="Agcontent" id="agile-section">
@@ -32,12 +33,13 @@
 
             <p>
                 Agile is een <strong>flexibele </strong>manier van werken waarbij het grootste belang <strong>klanten
-                    tevreden </strong>houden is. Er kunnen <strong>snel </strong>en <strong>efficiënt </strong>veranderingen worden
-                gemaakt. 
+                    tevreden </strong>houden is. Er kunnen <strong>snel </strong>en <strong>efficiënt
+                </strong>veranderingen worden
+                gemaakt.
             </p>
         </div>
         <div class="agim">
-        <img class="agilefot" src="agile2.webp" alt="agile">
+            <img class="agilefot" src="agile2.webp" alt="agile">
 
         </div>
     </div>
@@ -47,7 +49,7 @@
     <div class="manifdiv">
 
         <div class="agmaim">
-        <img class="manifot" src="agileman4.png" alt="agileman">
+            <img class="manifot" src="agileman4.png" alt="agileman">
 
         </div>
 
@@ -109,8 +111,10 @@
             <section class="agile-principles">
 
                 <ol>
-                    <?php foreach ($agilePrinciples as $principle) : ?>
-                        <li><?= $principle; ?></li>
+                    <?php foreach ($agilePrinciples as $principle): ?>
+                        <li>
+                            <?= $principle; ?>
+                        </li>
                     <?php endforeach; ?>
                 </ol>
 
@@ -127,21 +131,21 @@
     <div class="divid"></div>
     <!-- ---------------------------------------Lean & mu's--------------------------------------- -->
     <div class="lemudiv" id="lemu-section">
-        
+
         <div class="lemum">
             <img class="lemufot" src="3mus.png" alt="drie Mu's">
-            
+
         </div>
-        
+
         <div class="lemutext">
-            
+
             <h1>Lean en de drie Mu's</h1>
-                <p>
-                    Zorgen dat de maximale waarde wordt geleverd zonder extra onnodig werk te doen wordt
-                    <strong>lean</strong> genoemd. Deze manier van werken is bedacht om de
-                    <strong>drie Mu's</strong> te voorkomen. <br>Dit zijn:
-                </p>
-    <?php
+            <p>
+                Zorgen dat de maximale waarde wordt geleverd zonder extra onnodig werk te doen wordt
+                <strong>lean</strong> genoemd. Deze manier van werken is bedacht om de
+                <strong>drie Mu's</strong> te voorkomen. <br>Dit zijn:
+            </p>
+            <?php
             $driemus = [
                 "<strong>Muda</strong> staat voor <strong>verspilling</strong>, het zijn activiteiten of processen 
                 die geen waarde toevoegen aan het product of de klant. ",
@@ -157,23 +161,25 @@
             <section class="driemus">
 
                 <ol>
-                    <?php foreach ($driemus as $mu) : ?>
-                        <li><?= $mu; ?></li>
+                    <?php foreach ($driemus as $mu): ?>
+                        <li>
+                            <?= $mu; ?>
+                        </li>
                     <?php endforeach; ?>
                 </ol>
 
             </section>
-    
+
         </div>
     </div>
 
-<div class="divid"></div>
-<!-- ------------------------------------Lean & mu's end------------------------------------ -->
+    <div class="divid"></div>
+    <!-- ------------------------------------Lean & mu's end------------------------------------ -->
 
 
-<!-- ---------------------------------------Scrum--------------------------------------- -->
+    <!-- ---------------------------------------Scrum--------------------------------------- -->
 
-<div class="scrumdiv" id="scrum-section">
+    <div class="scrumdiv" id="scrum-section">
 
         <div class="sctext">
             <h1>Scrum</h1>
@@ -181,21 +187,21 @@
             <p>
                 Scrum is een <strong>Agile-framework</strong> het gaat erom dat er veranderingen gemaakt kunnen
                 worden op basis van de feedback van de klanten. Dit is mogelijk doordat er bij scrum regelmatige
-                werkende stukjes software worden geleverd. <br> Deze stukjes software zijn in de sprint voltooid en 
+                werkende stukjes software worden geleverd. <br> Deze stukjes software zijn in de sprint voltooid en
                 worden het <strong>increment</strong> genoemd. Het moet hiervoor ook voldoen aan de <strong>
-                definition van done</strong>, dat is waaraan het product moet voldoen om te worden gezien als
-                klaar (done). 
+                    definition van done</strong>, dat is waaraan het product moet voldoen om te worden gezien als
+                klaar (done).
             </p>
         </div>
         <div class="scrumfoto">
-        <img class="scrumfot" src="scrum.png" alt="scrum">
+            <img class="scrumfot" src="scrum.png" alt="scrum">
         </div>
 
     </div>
 
     <div class="divid"></div>
     <!-- --------------------------------------Scrum end-------------------------------------- -->
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
