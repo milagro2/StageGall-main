@@ -117,7 +117,7 @@ nav li:hover a {
     padding: 1%;
     border-radius: 10px;
     font-size: 1vw;
-    padding-bottom: 26%;
+    padding-bottom: 30%;
 }
 
 .sticky-block p {
@@ -390,7 +390,6 @@ html {
     transition: padding 0.3s;
 }
 
-/* DevOps content style */
 .DevOps-content {
     display: flex;
     align-items: center;
@@ -597,5 +596,113 @@ html {
 
 /* end tools part--------------------------------------- */
 
-/* test area end---------------------------------------------------------------------------------- */
+/* to do part ------------------------------------------ */
+.todo-header {
+    background: linear-gradient(to right, #0044cc, #3388ff, #0044cc);
+    color: #ffffff;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.3vw;
+    transition: padding 0.3s;
+}
+
+.todo-content {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    margin: 5%;
+}
+
+.doto-img {
+    flex: 1;
+    margin-right: 9%;
+}
+
+.todo-text {
+    flex: 2;
+    margin: 0px 25% 0px 0%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 2% 3%;
+}
+
+.todo-content h1 {
+    font-size: 2vw;
+}
+
+.todo-content p {
+    font-size: 1.3vw;
+}
+
+.todo-image {
+    max-width: 130%;
+    height: auto;
+    padding: 10% 0%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+#todo-list{
+    font-size: 1.3vw;
+    list-style-type: none;
+    line-height: 1.7vw;
+}
+
+
+/* to do part end ---------------------------------------- */
+/* in progress part ---------------------------------------- */
+/* in progress part end ---------------------------------------- */
+/* side notes part --------------------------------------- */
+.notes-header {
+    background: linear-gradient(to right, #0044cc, #3388ff, #0044cc);
+    color: #ffffff;
+    padding: 2%;
+    text-align: center;
+    font-size: 1.3vw;
+    transition: padding 0.3s;
+}
+
+.notes-content {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    margin: 5%;
+}
+
+.not-img {
+    flex: 1;
+    margin-right: 9%;
+}
+
+.notes-text {
+    flex: 2;
+    margin: 0px 25% 0px 0%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 2% 3%;
+}
+
+.notes-content h1 {
+    font-size: 2vw;
+}
+
+.notes-content p {
+    font-size: 1.3vw;
+}
+
+.notes-image {
+    max-width: 130%;
+    height: auto;
+    padding: 10% 0%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+#notes-list{
+    font-size: 1.3vw;
+    list-style-type: none;
+    line-height: 1.7vw;
+}
+
+/* side notes part end ------------------------------------ */
 /* outline: 4px solid #ff000042; */

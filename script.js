@@ -7,3 +7,12 @@ window.onscroll = function () {
     }
 };
 
+const todoList = document.getElementById('todo-list');
+        todoList.addEventListener('change', function (event) {
+            const listItem = event.target.parentElement;
+            if (event.target.checked) {
+                listItem.style.textDecoration = 'line-through';
+            } else {
+                listItem.style.textDecoration = 'none';
+            }
+        });
