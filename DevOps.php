@@ -36,7 +36,7 @@
                 tussen de
                 software development en IT-operations teams. Met DevOps worden er veel <strong>minder fouten</strong>
                 gemaakt en
-                als deze worden gemaakt worden ze <strong>sneller opgelost</strong>
+                als deze worden gemaakt worden ze <strong>sneller opgelost.</strong>
             </p>
         </div>
         <div class="devops-img">
@@ -45,28 +45,8 @@
 
     </div>
     <div class="divid"></div>
-    <!-- -----------------------------------CI/CD----------------------------------- -->
-    <div class="ci-cd-div" id="ci-cd-section">
-
-        <div class="ci-cd-img">
-            <img class="ci-cd-image" src="cicd.WEBP" alt="CI/CD">
-        </div>
-
-        <div class="ci-cd-text">
-            <h1>CI/CD</h1>
-
-            <p>
-                Continuous Integration (CI) and Continuous Deployment (CD) are integral parts of DevOps. CI involves
-                the
-                frequent integration of code changes into a shared repository, followed by automated testing.
-                CD extends CI by automatically deploying code changes to production or staging environments after
-                successful testing. These practices ensure a faster and more reliable software delivery process.
-            </p>
-        </div>
-    </div>
-    <div class="divid"></div>
     <!-- --------------------------------------CI/CD-------------------------------------- -->
-    <div class="cicddiv" id="cicd-section">
+    <div class="cicddiv" id="ci-cd-section">
 
         <div class="cctext">
             <h1>CI/CD</h1>
@@ -120,10 +100,11 @@
             </ul>
         </div>
         <div class="cicdfoto">
-            <img class="cicdfot" src="cicd.png" alt="CI/CD">
+            <img class="ci-cd-image" src="cicd.WEBP" alt="CI/CD">
         </div>
 
     </div>
+
 
     <div class="divid"></div>
     <!-- ------------------------------------CI/CD end------------------------------------ -->
@@ -176,9 +157,9 @@
             <h1>DevOps Tools</h1>
 
             <p>
-                There are various DevOps tools available to facilitate different stages of the DevOps pipeline.
-                Some popular DevOps tools include Jenkins, Docker, Kubernetes, Git, Ansible, and more. These tools
-                help automate tasks, manage infrastructure, and ensure smooth DevOps processes.
+                Er zijn verschillende tools in de DevOps pipeline. Een paar populaire DevOps tools zijn:
+                Jenkins, Docker, Kubernetes, Git, Ansible, en meer. Deze tools helpen het automatiseren
+                van opdrachten, beheren infrastructuur, en zorgen ervoor dat de DevOps processes goed verlopen.
             </p>
         </div>
     </div>
