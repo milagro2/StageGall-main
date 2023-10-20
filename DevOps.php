@@ -115,14 +115,14 @@
 
             <?php
             $devopsBenefits = [
-                "Faster software delivery",
-                "Increased reliability and stability",
-                "Improved collaboration between teams",
-                "Automation of repetitive tasks",
-                "Reduced time-to-market",
-                "Enhanced scalability and flexibility",
-                "Better resource utilization",
-                "Continuous monitoring and feedback"
+                "Snellere software levering",
+                "Meer betrouwbaar",
+                "Bettere samenwerking tussen teams",
+                "Automatiseren van herhalende taken",
+                "Verkort tijd to uitbreng",
+                "Grotere schaalbaarheid en flexibiliteit",
+                "Beter gebruik tools",
+                "Continue monitoring en feedback"
             ];
             ?>
 

@@ -3,6 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    transition: ease background-color 0.7s;
 }
 
 header {
@@ -78,6 +79,7 @@ nav li:hover a {
     display: flex;
     justify-content: flex-end;
 }
+
 
 #navbar.hidden {
     transform: translateY(-100%);
@@ -155,7 +157,7 @@ html {
     display: flex;
     align-items: center;
     padding: 3%;
-    margin: 5%;
+    margin: 2%;
     /* outline: 4px solid #ff000042; */
 }
 
@@ -202,8 +204,8 @@ html {
     display: flex;
     align-items: center;
     padding: 6% 3%;
-    padding-right: 15%;
-    margin: 5%;
+    padding-right: 3%;
+    margin: 2%;
     text-align: right;
     /* outline: 4px solid #ff000042; */
 }
@@ -242,14 +244,14 @@ html {
     align-items: center;
     padding: 3%;
     padding-right: 15%;
-    margin: 5%;
+    margin: 2%;
     /* outline: 4px solid #ff000042; */
 }
 
 
 .agprfots {
     flex: 1;
-    margin-right: 21%;
+    margin-right: 23%;
 }
 
 .agprtext {
@@ -261,11 +263,9 @@ html {
     margin-top: 5%;
 }
 
-
 .agprdiv h1 {
     font-size: 2vw;
 }
-
 
 .agprfot {
     max-width: 200%;
@@ -292,8 +292,8 @@ html {
     display: flex;
     align-items: center;
     padding: 6% 3%;
-    padding-right: 15%;
-    margin: 5%;
+    padding-right: 17%;
+    margin: 3%;
     text-align: right;
     /* outline: 4px solid #ff000042; */
 }
@@ -342,7 +342,7 @@ html {
     align-items: center;
     padding: 3%;
     padding-right: 15%;
-    margin: 5%;
+    margin: 3%;
     /* outline: 4px solid #ff000042; */
 }
 
@@ -379,7 +379,6 @@ html {
 
 
 
-
 /* Devops page-------------------------------------------------------------------------------------- */
 .devops-header {
     background: linear-gradient(to right, #0044cc, #3388ff, #0044cc);
@@ -400,7 +399,6 @@ html {
 .devops-img {
     flex: 1;
     margin-right: 9%;
-
 }
 
 .devops-text {
@@ -519,7 +517,6 @@ html {
     padding: 6% 3%;
     padding-right: 15%;
     margin: 5%;
-    text-align: right;
 }
 
 .benefits-text {
@@ -528,6 +525,7 @@ html {
     background-color: #f5f5f5;
     border-radius: 10px;
     padding: 2% 3%;
+    list-style: none;
 }
 
 .benefits-div h1 {
@@ -548,7 +546,7 @@ html {
 }
 
 .benefits-div ul {
-    list-style-type: circle;
+    list-style-type: disc;
     padding-left: 3%;
     font-size: 1.3vw;
 }
@@ -560,7 +558,6 @@ html {
     display: flex;
     align-items: center;
     padding: 6% 3%;
-    padding-right: 15%;
     margin: 5%;
     text-align: right;
 }
@@ -572,7 +569,7 @@ html {
 
 .tools-text {
     flex: 2;
-    margin: 0px 30% 0px 0%;
+    margin: 0px 15% 0px 0%;
     background-color: #f5f5f5;
     border-radius: 10px;
     padding: 2% 3%;
@@ -642,7 +639,7 @@ html {
     border-radius: 15px;
 }
 
-#todo-list{
+#todo-list {
     font-size: 1.3vw;
     list-style-type: none;
     line-height: 1.7vw;
@@ -698,7 +695,7 @@ html {
     border-radius: 15px;
 }
 
-#notes-list{
+#notes-list {
     font-size: 1.3vw;
     list-style-type: none;
     line-height: 1.7vw;
@@ -706,3 +703,18 @@ html {
 
 /* side notes part end ------------------------------------ */
 /* outline: 4px solid #ff000042; */
+
+#mode-text {
+    border-radius: 5px;
+    font-size: 1vw;
+    background-color: black;
+    color: white;
+    padding: 2px;
+    padding: 0.5% 1%;
+    margin-left: 10px;
+}
+
+.sun-moon {
+    width: 2%;
+    height: 2%;
+}
