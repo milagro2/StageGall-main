@@ -22,8 +22,8 @@ let isBlack = false;
 const body = document.body;
 const sunMoon = document.getElementById("sun-moon");
 const BackColor = document.querySelectorAll(".todo-text, .notes-text, .done-text, .sticky-block");
-const TextColor = document.querySelectorAll(".todo-text, .notes-text, .done-text, .sticky-block a");
-const HeadColor = document.querySelector(".todo-header");
+const TextColor = document.querySelectorAll(".todo-text, .notes-text, .done-text, .sticky-block, .sticky-block a");
+const HeadColor = document.querySelector(".todo-header, .Agile-header");
 
 
 

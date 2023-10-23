@@ -16,13 +16,14 @@ header {
 }
 
 .agile-header {
-    background-image: url('tech.jpeg');
-    background-size: 5px 5px;
-    color: #ffffffda;
-    padding: 2%;
+    /* background-image: url('tech.jpeg'); */
+    /* background-size: 5px 5px; */
+    /* color: #ffffffda; */
+    /* padding: 2%;
     text-align: center;
     font-size: 1.3vw;
-    transition: padding 0.3s;
+    transition: padding 0.3s; */
+    background: red;
 }
 
 /* navbar style end ------------------------------------------------------- */
@@ -37,7 +38,6 @@ nav ul {
     list-style-type: none;
     padding: 0.3%;
     font-size: 1vw;
-
 }
 
 nav li {
@@ -54,7 +54,6 @@ nav a {
 nav li:hover a {
     color: #232423;
 }
-
 
 #navbar {
     transition: ease 0.3s;

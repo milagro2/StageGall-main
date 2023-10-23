@@ -6,6 +6,7 @@ $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
 
     <nav id="navbar">
         <ul>
+
             <li><a href="StHome.php" <?php if ($current_page == "StHome.php")
                 echo 'class="active"'; ?>>Home</a></li>
             <li><a href="Agile.php" <?php if ($current_page == "Agile.php")
@@ -20,11 +21,11 @@ $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
                 echo 'class="active"'; ?>>Stage-Verslag</a></li>
             <li><a href="about.php" <?php if ($current_page == "about.php")
                 echo 'class="active"'; ?>>About</a></li>
-        <li><img src="sun.png" id="sun-moon" class="sun-moon" alt="sun-moon" onclick="toggleBackground()" /></li>
+            <li><img src="sun.png" id="sun-moon" class="sun-moon" alt="sun-moon" onclick="toggleBackground()" /></li>
         </ul>
 
         <ul class="right-nav">
-            <li><a href="#page-top">Page-top</a></li>
+            <li><a href="#page-top">Page top</a></li>
         </ul>
     </nav>
 </body>
