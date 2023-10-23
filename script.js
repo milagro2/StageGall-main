@@ -21,37 +21,39 @@ todoList.addEventListener('change', function (event) {
 let isBlack = false;
 const body = document.body;
 const sunMoon = document.getElementById("sun-moon");
-const divsColor = document.querySelectorAll(".todo-text, .notes-text, .done-text, .todo-image, .sticky-block");
-const textToChangeColor = document.querySelectorAll(".todo-text, .notes-text, .done-text");
+const BackColor = document.querySelectorAll(".todo-text, .notes-text, .done-text, .sticky-block");
+const TextColor = document.querySelectorAll(".todo-text, .notes-text, .done-text, .sticky-block a");
 const HeadColor = document.querySelector(".todo-header");
 
 
 
 function toggleBackground() {
+    // white background 
     if (isBlack) {
         body.style.backgroundColor = "white";
         sunMoon.src = "sun.png";
         isBlack = false;
-        divsColor.forEach((div) => {
+        BackColor.forEach((div) => {
             div.style.backgroundColor = "#f5f5f5";
         });
-        textToChangeColor.forEach((text) => {
+        TextColor.forEach((text) => {
             text.style.color = "black";
         });
         HeadColor.style.backgroundColor = "#d3d3d3";
         HeadColor.style.color = "black";
 
+        // dark background 
     } else {
-        body.style.backgroundColor = "black";
+        body.style.backgroundColor = "#191919";
         sunMoon.src = "moon1.png";
         isBlack = true;
-        divsColor.forEach((div) => {
-            div.style.backgroundColor = "#383838";
+        BackColor.forEach((div) => {
+            div.style.backgroundColor = "black";
         })
-        textToChangeColor.forEach((text) => {
-            text.style.color = "white";
+        TextColor.forEach((text) => {
+            text.style.color = "#ffffffba";
         });
         HeadColor.style.backgroundColor = "black";
-        HeadColor.style.color = "white";
+        HeadColor.style.color = "#ffffffba";
     }
 }

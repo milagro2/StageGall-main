@@ -14,7 +14,6 @@
     </header>
 
     <?php include 'navbar.php' ?>
-
     <div class="sticky-block">
 
         <p>Onderdelen</p>
@@ -32,7 +31,7 @@
             <h1>Wat is er to do?</h1>
 
             <ul id="todo-list">
-                <li><input type="checkbox"> Nog geen stagevergoeding );</li>
+                <li><input type="checkbox"> Jiraaa</li>
                 <li><input type="checkbox"> Taak 2</li>
                 <li><input type="checkbox"> Taak 3</li>
             </ul>

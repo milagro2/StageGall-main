@@ -20,7 +20,7 @@ $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
                 echo 'class="active"'; ?>>Stage-Verslag</a></li>
             <li><a href="about.php" <?php if ($current_page == "about.php")
                 echo 'class="active"'; ?>>About</a></li>
-            <li><img src="sun.png" id="sun-moon" class="sun-moon" alt="sun-moon" onclick="toggleBackground()" /></li>
+        <li><img src="sun.png" id="sun-moon" class="sun-moon" alt="sun-moon" onclick="toggleBackground()" /></li>
         </ul>
 
         <ul class="right-nav">

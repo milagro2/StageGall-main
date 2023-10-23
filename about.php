@@ -16,7 +16,7 @@
 
     <div class="content">
 
-        <p>Welcome.</p>
+        <p>Welcome!</p>
 
         
     </div>
