@@ -202,7 +202,21 @@
     <div class="divid"></div>
     <!-- --------------------------------------Scrum end-------------------------------------- -->
     <script src="script.js"></script>
-</body>
+</body=>
 
 </html>
-<!-- trailhead salvesforce -->
+
+
+
+<!-- gall organisate
+afspraak maken hugo - wat is jouw rol - wat doe jij oan precies - kan jij mij alles vertellen over de IT aplicaties van gall&gall
+afspraak maken anneke - wat is jouw rol - wat doe jij dan precies
+afspraak maken erwin - wat is jouw rol - wat doe jij dan precies
+afspraak maken maurice - wat is jouw rol - wat doe jij dan precies 
+afspraak maken dajana - wat is jouw rol - wat doe jij dan precies
+afspraak maken wouter bas - wat is jouw rol - wat doe jij dan precies 
+afspraak maken roopesh - wat is jouw rol - wat doe jij dan precies -->
+<!-- elk gesprek gespreksverslag
+afspraak maken maurice & vladimir kurganov - wat is jouw rol - wat doe jij dan precies - kan je me helpen opzetten pipeline -->
+<!-- deze week hugo & maurice + vladimir -->
+<!-- elke vrijdag uren schrijven jira -->

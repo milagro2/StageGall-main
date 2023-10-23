@@ -16,28 +16,42 @@ todoList.addEventListener('change', function (event) {
         listItem.style.textDecoration = 'none';
     }
 });
-//dddd------------------------
 
+// dark/light mode
 let isBlack = false;
-const body = document.getElementById("body");
+const body = document.body;
 const sunMoon = document.getElementById("sun-moon");
-const modeText = document.getElementById("mode-text");
+const divsColor = document.querySelectorAll(".todo-text, .notes-text, .done-text, .todo-image, .sticky-block");
+const textToChangeColor = document.querySelectorAll(".todo-text, .notes-text, .done-text");
+const HeadColor = document.querySelector(".todo-header");
+
+
 
 function toggleBackground() {
     if (isBlack) {
         body.style.backgroundColor = "white";
         sunMoon.src = "sun.png";
-        modeText.innerText = "Dark Mode";
-        modeText.style.backgroundColor = "black";
-        modeText.style.color = "white";
-        
         isBlack = false;
+        divsColor.forEach((div) => {
+            div.style.backgroundColor = "#f5f5f5";
+        });
+        textToChangeColor.forEach((text) => {
+            text.style.color = "black";
+        });
+        HeadColor.style.backgroundColor = "#d3d3d3";
+        HeadColor.style.color = "black";
+
     } else {
         body.style.backgroundColor = "black";
-        sunMoon.src = "moon.png";
-        modeText.innerText = "Light Mode";
-        modeText.style.backgroundColor = "white";
-        modeText.style.color = "black";
+        sunMoon.src = "moon1.png";
         isBlack = true;
+        divsColor.forEach((div) => {
+            div.style.backgroundColor = "#383838";
+        })
+        textToChangeColor.forEach((text) => {
+            text.style.color = "white";
+        });
+        HeadColor.style.backgroundColor = "black";
+        HeadColor.style.color = "white";
     }
 }

@@ -97,7 +97,6 @@ nav li:hover a {
 #navbar .active {
     font-size: 1.3vw;
     color: #000000dd;
-
 }
 
 /* navbar style end ------------------------------------------------------- */
@@ -160,7 +159,6 @@ html {
     margin: 2%;
     /* outline: 4px solid #ff000042; */
 }
-
 
 .agim {
     flex: 1;
@@ -594,15 +592,6 @@ html {
 /* end tools part--------------------------------------- */
 
 /* to do part ------------------------------------------ */
-.todo-header {
-    background: linear-gradient(to right, #0044cc, #3388ff, #0044cc);
-    color: #ffffff;
-    padding: 2%;
-    text-align: center;
-    font-size: 1.3vw;
-    transition: padding 0.3s;
-}
-
 .todo-content {
     display: flex;
     align-items: center;
@@ -645,20 +634,9 @@ html {
     line-height: 1.7vw;
 }
 
-
 /* to do part end ---------------------------------------- */
-/* in progress part ---------------------------------------- */
-/* in progress part end ---------------------------------------- */
-/* side notes part --------------------------------------- */
-.notes-header {
-    background: linear-gradient(to right, #0044cc, #3388ff, #0044cc);
-    color: #ffffff;
-    padding: 2%;
-    text-align: center;
-    font-size: 1.3vw;
-    transition: padding 0.3s;
-}
 
+/* side notes part --------------------------------------- */
 .notes-content {
     display: flex;
     align-items: center;
@@ -702,19 +680,72 @@ html {
 }
 
 /* side notes part end ------------------------------------ */
+/* done part ------------------------------------ */
+.done-content {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    margin: 5%;
+}
+
+.done-img {
+    flex: 1;
+    margin-right: 9%;
+}
+
+.done-text {
+    flex: 2;
+    margin: 0px 25% 0px 0%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 2% 3%;
+}
+
+.done-content h1 {
+    font-size: 2vw;
+}
+
+.done-content p {
+    font-size: 1.3vw;
+}
+
+.done-image {
+    max-width: 130%;
+    height: auto;
+    padding: 10% 0%;
+    background-color: #f5f5f5;
+    border-radius: 15px;
+}
+
+#done-list {
+    font-size: 1.3vw;
+    list-style-type: none;
+    line-height: 1.7vw;
+}
+
+/* done part end ------------------------------------ */
 /* outline: 4px solid #ff000042; */
 
-#mode-text {
-    border-radius: 5px;
-    font-size: 1vw;
-    background-color: black;
-    color: white;
-    padding: 2px;
-    padding: 0.5% 1%;
-    margin-left: 10px;
-}
 
 .sun-moon {
     width: 2%;
     height: 2%;
+    cursor: pointer;
+}
+
+.line {
+    text-decoration: line-through;
+}
+
+.todo-text,
+.notes-text,
+.done-text,
+.todo-image,
+.sticky-block,
+.todo-header {
+    transition: ease background-color 0.7s;
+}
+
+.todo-header {
+    background: #d3d3d3;
 }
