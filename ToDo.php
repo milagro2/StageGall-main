@@ -31,7 +31,7 @@
             <h1>Wat is er to do?</h1>
 
             <ul id="todo-list">
-                <li><input type="checkbox"> Jiraaa</li>
+                <li><input type="checkbox"> Fix website bug: switching pages back <br>to light mode</li>
                 <li><input type="checkbox"> Taak 2</li>
                 <li><input type="checkbox"> Taak 3</li>
             </ul>

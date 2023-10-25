@@ -373,7 +373,7 @@ html {
     align-items: center;
     padding: 3%;
     margin: 5%;
-    
+
 }
 
 .devops-img {
@@ -470,10 +470,12 @@ html {
 
 .cicddiv h1 {
     font-size: 2vw;
+    color: #ff4900b0;
 }
 
 .cicddiv h2 {
     font-size: 1.7vw;
+    color: #ff4900b0;
 }
 
 .cicddiv p {
@@ -511,6 +513,7 @@ html {
 
 .benefits-div h1 {
     font-size: 2vw;
+    color: #ff4900b0;
 }
 
 .benefits-img {
@@ -558,6 +561,7 @@ html {
 
 .tools-div h1 {
     font-size: 2vw;
+    color: #ff4900b0;
 }
 
 .tools-div p {

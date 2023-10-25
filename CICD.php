@@ -10,15 +10,18 @@
 
 <body>
     <header>
-        <h1>CI  CD</h1>
+        <h1>CI CD</h1>
     </header>
     <?php include 'navbar.php' ?>
 
     <div class="content">
 
-        <p>Welcome!</p>
+        <p>IT portfolio control - houdt bij waar het geld precies heen gaat in Etos, Gall&Gall en AH. Maakt een duideljk
+            overzicht in excel en deelt met Maurice. Zorgt ervoor dat er niet te veel geld naar het ene gaat en te weinig
+            naar het andere.
+        </p>
 
-       
+
     </div>
 
 

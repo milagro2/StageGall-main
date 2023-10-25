@@ -83,6 +83,7 @@ function toggleBackground() {
 
 
 
+
 // todo list line
 const todoList = document.getElementById('todo-list');
 todoList.addEventListener('change', function (event) {
