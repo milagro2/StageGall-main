@@ -41,7 +41,7 @@
             </p>
         </div>
         <div class="agim">
-            <img class="agilefot" src="agile2.webp" alt="agile">
+            <img class="agilefot" src="agile2.webp" alt="agile"id="texT">
 
         </div>
     </div>
@@ -51,7 +51,7 @@
     <div class="manifdiv">
 
         <div class="agmaim">
-            <img class="manifot" src="agileman4.png" alt="agileman">
+            <img class="manifot" src="agileman4.png" alt="agileman"id="texT">
 
         </div>
 
@@ -126,7 +126,7 @@
 
         </div>
         <div class="agprfots">
-            <img class="agprfot" src="agileprins.webp" alt="agilepri">
+            <img class="agprfot" src="agileprins.webp" alt="agilepri"id="texT">
         </div>
     </div>
 
@@ -135,7 +135,7 @@
     <div class="lemudiv" id="lemu-section">
 
         <div class="lemum">
-            <img class="lemufot" src="3mus.png" alt="drie Mu's">
+            <img class="lemufot" src="3mus.png" alt="drie Mu's"id="texT">
 
         </div>
 
@@ -196,7 +196,7 @@
             </p>
         </div>
         <div class="scrumfoto">
-            <img class="scrumfot" src="scrum.png" alt="scrum">
+            <img class="scrumfot" src="scrum.png" alt="scrum"id="texT">
         </div>
 
     </div>

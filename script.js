@@ -7,6 +7,7 @@ window.onscroll = function () {
     }
 };
 
+// dark/light mode
 
 let isBlack = false;
 const body = document.body;
@@ -15,6 +16,8 @@ const TextDivs = document.querySelectorAll("div[id^='texT']");
 const BackColor = [];
 const TextColor = document.querySelectorAll(".todo-text, .notes-text, .done-text, .sticky-block, .sticky-block a");
 const HeadColor = document.querySelector("header");
+const Images = document.querySelectorAll("img[id^='texT']");
+
 
 const originalColors = {
     body: body.style.backgroundColor,
@@ -23,7 +26,8 @@ const originalColors = {
     headerBackground: HeadColor.style.background,
     headColor: {
         color: HeadColor.style.color
-    }
+    },
+    imagesBackground: []
 };
 
 TextDivs.forEach((div) => {
@@ -33,6 +37,10 @@ TextDivs.forEach((div) => {
 
 TextColor.forEach((text) => {
     originalColors.textColor.push(text.style.color);
+});
+
+Images.forEach((img) => {
+    originalColors.imagesBackground.push(img.style.backgroundColor);
 });
 
 function toggleBackground() {
@@ -47,6 +55,9 @@ function toggleBackground() {
         TextColor.forEach((text, index) => {
             text.style.color = originalColors.textColor[index];
         });
+        Images.forEach((img, index) => {
+            img.style.backgroundColor = originalColors.imagesBackground[index];
+        });
         HeadColor.style.background = "linear-gradient(to right, #881700, #ff6000, #881700)";
         HeadColor.style.color = originalColors.headColor.color;
     } else {
@@ -60,8 +71,11 @@ function toggleBackground() {
         TextColor.forEach((text) => {
             text.style.color = "#ffffffba";
         });
+        Images.forEach((img) => {
+            img.style.backgroundColor = "black";
+        });
         HeadColor.style.background = "black";
-        HeadColor.style.color = "#ffffffba";
+        HeadColor.style.color = "#ff4900db";
     }
 }
 

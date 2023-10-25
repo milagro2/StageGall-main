@@ -90,7 +90,7 @@
             </ul>
         </div>
         <div class="cicdfoto">
-            <img class="ci-cd-image" src="cicd.WEBP" alt="CI/CD">
+            <img class="ci-cd-image" src="cicd.WEBP" alt="CI/CD"id="texT">
         </div>
     </div>
     <div class="divid"></div>
@@ -121,14 +121,14 @@
             </section>
         </div>
         <div class="benefits-img">
-            <img class="benefits-image" src="benefits.png" alt="DevOps Benefits">
+            <img class="benefits-image" src="benefits.png" alt="DevOps Benefits"id="texT">
         </div>
     </div>
     <div class="divid"></div>
     <!-- -----------------------------------DevOps Tools----------------------------------- -->
     <div class="tools-div" id="tools-section">
         <div class="tools-img">
-            <img class="tools-image" src="tools.png" alt="DevOps Tools">
+            <img class="tools-image" src="tools.png" alt="DevOps Tools"id="texT">
         </div>
         <div class="tools-text"id="texT">
             <h1>DevOps Tools</h1>
