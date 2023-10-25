@@ -7,23 +7,12 @@ ul {
 }
 
 header {
-    background: linear-gradient(to right, #006600, #5bf04e, #006600);
-    color: #000000;
-    padding: 2%;
-    text-align: center;
-    font-size: 1.3vw;
-    transition: padding 0.3s;
-}
-
-.agile-header {
-    background-image: url('tech.jpeg');
-    background-size: 5px 5px;
+    background: linear-gradient(to right, #881700, #ff6000, #881700);
     color: #ffffffda;
     padding: 2%;
     text-align: center;
     font-size: 1.3vw;
     transition: padding 0.3s;
-
 }
 
 /* navbar style end ------------------------------------------------------- */
@@ -47,7 +36,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffffba;
     font-weight: bold;
 }
 
@@ -88,8 +77,6 @@ nav li:hover a {
     position: sticky;
     top: 0;
     width: 100%;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 100;
     padding: 1% 0;
 }
 
@@ -139,8 +126,9 @@ nav li:hover a {
 }
 
 .sticky-block a:hover {
-    color: #b3b3b3b6;
+    background-color: #ff55008b;
 }
+
 
 html {
     scroll-behavior: smooth;
@@ -376,15 +364,6 @@ html {
 
 
 /* Devops page-------------------------------------------------------------------------------------- */
-.devops-header {
-    background: linear-gradient(to right, #0044cc, #3388ff, #0044cc);
-    color: #ffffff;
-    padding: 2%;
-    text-align: center;
-    font-size: 1.3vw;
-    transition: padding 0.3s;
-}
-
 .DevOps-content {
     display: flex;
     align-items: center;
@@ -605,7 +584,7 @@ html {
 .todo-text {
     flex: 2;
     margin: 0px 25% 0px 0%;
-    background-color: #ff0000;
+    background-color: #f5f5f5;
     border-radius: 10px;
     padding: 2% 3%;
 }
@@ -726,9 +705,12 @@ html {
 
 
 .sun-moon {
-    width: 2%;
-    height: 2%;
+    width: 25px;
+    height: 25px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .line {
@@ -744,6 +726,3 @@ html {
     transition: ease background-color 0.7s;
 }
 
-.todo-header {
-    background: #d3d3d3;
-}

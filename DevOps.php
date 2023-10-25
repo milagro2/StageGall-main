@@ -9,11 +9,11 @@
 </head>
 
 <body>
-    <header class="devops-header" id="page-top">
+    <header id="page-top">
         <h1>DevOps - CI/CD</h1>
     </header>
     <?php include 'navbar.php'; ?>
-    <div class="sticky-block">
+    <div class="sticky-block"id="texT">
         <p>Onderdelen</p>
         <ul>
             <li><a href="#devops-section">Wat is DevOps?</a></li>
@@ -24,22 +24,40 @@
     </div>
     <!-- -----------------------------------Wat is DevOps?----------------------------------- -->
     <div class="DevOps-content" id="devops-section">
-        <div class="devops-text">
+        <div class="devops-text"id="texT">
             <h1>Wat is DevOps?</h1>
             <p>
                 DevOps is een manier van werken waarbij de focus ligt op <strong>samenwerking en communicatie</strong>
                 tussen de software development en IT-operations teams. Het minimaliseert fouten en versnelt de oplossing
                 ervan.
             </p>
+            <p> Eerst werkten developer en operators los van elkaar, devs werkten aan nieuwe dingen en de operators
+                gaven feedback over bugs en dingen waaraan gewerkt moest worden. Hierdoor moesten de devs lang wachten
+                voordat ze met deze kregen. Soms werkten de devs al aan volgende projecten terwijl de operators nog
+                feedback aan het geven waren op het vorige project. Hierdoor duurde het heel lang voordat er het product
+                klaar was.
+
+                Bij DevOps werken deze teams samen en verdelen ze het werk waardoor de problemen sneller kunnen worden
+                gevonden en opgelost en er efficiënter gewerkt kan worden. Door het automatiseren van processen als
+                testen en bouwen hoeven de teams minder handmatig werk te doen. Hierdoor kan er sneller en makkelijker
+                software worden ontwikkeld en problemen worden opgelost. Een mens kan vermoeid raken, afgeleid worden of
+                vergissingen maken maar bij automatisering kan dit niet en is dus meer betrouwbaar. Het is ook meer
+                consistent omdat het geprogrammeerd is steeds hetzelfde te doen, daarnaast bespaar je kosten doordat het
+                minder tijd en mensen werk kost. DevOps is flexibel en heeft een grote schaalbaarheid wat betekent dat
+                er makkelijker aan meerdere projecten kan worden gewerkt als er opeens meer vraag naar iets is. Door het
+                voortdurend in de gaten houden van de systemen kunnen de problemen snel worden gevonden en opgelost
+                voordat het te erg wordt. Doordat er zo continue stukjes werkende software kunnen worden geleverd is de
+                klantentevredenheid ook hoger en dat is belangrijk bij DevOps. Door het snellere leveren van producten
+                en updates heb je met DevOps concurrentievoordelen. </p>
         </div>
         <div class="devops-img">
-            <img class="devops-image" src="Devops.png" alt="DevOps">
+            <img class="devops-image" src="Devops.png" alt="DevOps"id="texT">
         </div>
     </div>
     <div class="divid"></div>
     <!-- --------------------------------------CI/CD-------------------------------------- -->
     <div class="cicddiv" id="ci-cd-section">
-        <div class="cctext">
+        <div class="cctext"id="texT">
             <h1>CI/CD</h1>
             <p>
                 CI/CD automatiseert het bouwen, testen en implementeren van software. Het faciliteert frequente
@@ -78,7 +96,7 @@
     <div class="divid"></div>
     <!-- -----------------------------------Voordelen van DevOps----------------------------------- -->
     <div class="benefits-div" id="benefits-section">
-        <div class="benefits-text">
+        <div class="benefits-text"id="texT">
             <h1>Voordelen van DevOps</h1>
             <?php
             $devopsBenefits = [
@@ -112,7 +130,7 @@
         <div class="tools-img">
             <img class="tools-image" src="tools.png" alt="DevOps Tools">
         </div>
-        <div class="tools-text">
+        <div class="tools-text"id="texT">
             <h1>DevOps Tools</h1>
             <p>
                 Er zijn verschillende tools in de DevOps pipeline. Een paar populaire DevOps tools zijn: Jenkins,

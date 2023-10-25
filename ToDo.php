@@ -9,15 +9,15 @@
 </head>
 
 <body>
-    <header class="todo-header" id="page-top">
+    <header id="page-top">
         <h1>To do tijdens stage</h1>
     </header>
 
     <?php include 'navbar.php' ?>
-    <div class="sticky-block">
+    <div class="sticky-block"id="texT">
 
         <p>Onderdelen</p>
-        <ul>
+        <ul >
             <li><a href="#todo-section">To Do</a></li>
             <li class="line"><a href="#progress-section">In progress</a></li>
             <li><a href="#notes-section">Side Notes</a></li>
@@ -27,7 +27,7 @@
     <!-- -----------------------------------To do list----------------------------------- -->
     <div class="todo-content" id="todo-section">
 
-        <div class="todo-text">
+        <div class="todo-text" id="texT" >
             <h1>Wat is er to do?</h1>
 
             <ul id="todo-list">
@@ -48,7 +48,7 @@
     <!-- -----------------------------------Side Notes----------------------------------- -->
     <div class="notes-content" id="notes-section">
         
-        <div class="notes-text">
+        <div class="notes-text"id="texT">
             <h1>Side notes</h1>
             
             <ul id="notes-list">
@@ -68,7 +68,7 @@
     <!-- -----------------------------------Done----------------------------------- -->
     <div class="done-content" id="done-section">
         
-        <div class="done-text">
+        <div class="done-text"id="texT">
             <h1>Done</h1>
             
             <ul id="done-list">

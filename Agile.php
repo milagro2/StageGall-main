@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <header class="agile-header" id="page-top">
+    <header id="page-top">
         <h1>Agile - Scrum</h1>
     </header>
 
     <?php include 'navbar.php' ?>
-    <div class="sticky-block">
+    <div class="sticky-block"id="texT">
         <p>Onderdelen</p>
         <ul>
             <li><a href="#agile-section">Agile</a></li>
@@ -30,7 +30,7 @@
     
     <div class="Agcontent" id="agile-section">
 
-        <div class="agtext">
+        <div class="agtext"id="texT">
             <h1>Agile</h1>
 
             <p>
@@ -55,7 +55,7 @@
 
         </div>
 
-        <div class="agmatext">
+        <div class="agmatext"id="texT">
 
             <h1>Agile-Manifesto</h1>
 
@@ -72,7 +72,7 @@
     <div class="agprdiv" id="agpr-section">
 
 
-        <div class="agprtext">
+        <div class="agprtext"id="texT">
             <h1>Agile Principes</h1>
 
             <?php
@@ -139,7 +139,7 @@
 
         </div>
 
-        <div class="lemutext">
+        <div class="lemutext"id="texT">
 
             <h1>Lean en de drie Mu's</h1>
             <p>
@@ -183,7 +183,7 @@
 
     <div class="scrumdiv" id="scrum-section">
 
-        <div class="sctext">
+        <div class="sctext"id="texT">
             <h1>Scrum</h1>
 
             <p>
@@ -221,4 +221,3 @@ afspraak maken roopesh - wat is jouw rol - wat doe jij dan precies -->
 <!-- elk gesprek gespreksverslag
 afspraak maken maurice & vladimir kurganov - wat is jouw rol - wat doe jij dan precies - kan je me helpen opzetten pipeline -->
 <!-- deze week hugo & maurice + vladimir -->
-<!-- elke vrijdag uren schrijven jira -->
