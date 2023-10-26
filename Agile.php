@@ -28,7 +28,7 @@
     <!-- -----------------------------------Agile----------------------------------- -->
 
     
-    <div class="Agcontent" id="agile-section">
+    <div class="agdiv" id="agile-section">
 
         <div class="agtext"id="texT">
             <h1>Agile</h1>

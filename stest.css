@@ -96,13 +96,13 @@ nav li:hover a {
 /* sticky-block style ------------------------------------------------------- */
 .sticky-block {
     position: sticky;
-    top: 9.3%;
+    top: 8.3%;
     float: right;
     width: 15%;
     height: auto;
     background-color: #f5f5f5;
     padding: 1%;
-    border-radius: 10px;
+    border-radius: 0 0 0 10px;
     font-size: 1vw;
     padding-bottom: 30%;
 }
@@ -137,10 +137,43 @@ html {
 }
 
 /* sticky-block style end --------------------------------------------------- */
+/* p  */
+.agdiv p,
+.manifdiv p,
+.lemudiv p,
+.scrumdiv p,
+.DevOpsdiv p,
+.toolsdiv p,
+.cicddiv p,
+.tododiv p,
+.notesdiv p,
+.donediv p,
+.gesprekdiv p {
+    font-size: 1.3vw;
+}
+
+/* h1 */
+
+.agdiv h1,
+.manifdiv h1,
+.lemudiv h1,
+.scrumdiv h1,
+.agprdiv h1,
+.benefitdiv h1,
+.DevOpsdiv h1,
+.toolsdiv h1,
+.cicddiv h1,
+.tododiv h1,
+.notesdiv h1,
+.donediv h1,
+.gesprekdiv h1 {
+    font-size: 2vw;
+    color: #ff4900b0;
+}
 
 
 /* agile part-------------------------------------------------------------- */
-.Agcontent {
+.agdiv {
     display: flex;
     align-items: center;
     padding: 3%;
@@ -159,15 +192,6 @@ html {
     background-color: #f5f5f5;
     border-radius: 10px;
     padding: 2% 3%;
-}
-
-
-.Agcontent h1 {
-    font-size: 2vw;
-}
-
-.Agcontent p {
-    font-size: 1.3vw;
 }
 
 .agilefot {
@@ -210,14 +234,6 @@ html {
     padding: 2% 3%;
 }
 
-.manifdiv h1 {
-    font-size: 2vw;
-}
-
-.manifdiv p {
-    font-size: 1.3vw;
-}
-
 
 .manifot {
     max-width: 275%;
@@ -251,9 +267,6 @@ html {
     margin-top: 5%;
 }
 
-.agprdiv h1 {
-    font-size: 2vw;
-}
 
 .agprfot {
     max-width: 200%;
@@ -298,14 +311,6 @@ html {
     padding: 2% 3%;
 }
 
-.lemudiv h1 {
-    font-size: 2vw;
-}
-
-.lemudiv p {
-    font-size: 1.3vw;
-}
-
 .lemufot {
     max-width: 150%;
     height: auto;
@@ -347,13 +352,6 @@ html {
     padding: 2% 3%;
 }
 
-.scrumdiv h1 {
-    font-size: 2vw;
-}
-
-.scrumdiv p {
-    font-size: 1.3vw;
-}
 
 .scrumfot {
     max-width: 175%;
@@ -364,16 +362,18 @@ html {
 }
 
 /* end scrum part --------------------------------------------- */
+/* Gespreksverslag page --------------------------------------- */
 
+
+/* Gespreksverslag end --------------------------------------- */
 
 
 /* Devops page-------------------------------------------------------------------------------------- */
-.DevOps-content {
+.DevOpsdiv {
     display: flex;
     align-items: center;
     padding: 3%;
     margin: 5%;
-
 }
 
 .devops-img {
@@ -389,15 +389,6 @@ html {
     padding: 2% 3%;
 }
 
-.DevOps-content h1 {
-    font-size: 2vw;
-    color: #ff4900b0;
-}
-
-.DevOps-content p {
-    font-size: 1.3vw;
-}
-
 .devops-image {
     max-width: 140%;
     height: auto;
@@ -406,45 +397,7 @@ html {
     border-radius: 15px;
 }
 
-/* CI/CD part----------------------------------------------------- */
-.ci-cd-div {
-    display: flex;
-    align-items: center;
-    padding: 6% 3%;
-    margin: 5%;
-    text-align: right;
-}
 
-.ci-cd-img {
-    flex: 1;
-    margin-right: 17%;
-}
-
-.ci-cd-text {
-    flex: 2;
-    margin: 0px 30% 0px 0%;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    padding: 2% 3%;
-}
-
-.ci-cd-div h1 {
-    font-size: 2vw;
-}
-
-.ci-cd-div p {
-    font-size: 1.3vw;
-}
-
-.ci-cd-image {
-    max-width: 175%;
-    height: auto;
-    padding: 5%;
-    background-color: #f5f5f5;
-    border-radius: 15px;
-}
-
-/* CI/CD part end ------------------------------------------------ */
 
 /* CI/CD part ---------------------------------------------------- */
 .cicddiv {
@@ -468,20 +421,11 @@ html {
     padding: 2% 3%;
 }
 
-.cicddiv h1 {
-    font-size: 2vw;
-    color: #ff4900b0;
-}
-
 .cicddiv h2 {
     font-size: 1.7vw;
     color: #ff4900b0;
 }
 
-.cicddiv p {
-    font-size: 1.3vw;
-    margin-top: 1%;
-}
 
 .cicdfot {
     max-width: 175%;
@@ -494,7 +438,7 @@ html {
 /* end ci/cd part-------------------------------------- */
 
 /* benefs part----------------------------------------- */
-.benefits-div {
+.benefitdiv {
     display: flex;
     align-items: center;
     padding: 6% 3%;
@@ -511,11 +455,6 @@ html {
     list-style: none;
 }
 
-.benefits-div h1 {
-    font-size: 2vw;
-    color: #ff4900b0;
-}
-
 .benefits-img {
     flex: 1;
     margin-right: 17%;
@@ -529,7 +468,7 @@ html {
     border-radius: 15px;
 }
 
-.benefits-div ul {
+.benefitdiv ul {
     list-style-type: disc;
     padding-left: 3%;
     font-size: 1.3vw;
@@ -538,7 +477,7 @@ html {
 /* end benefs part---------------------------------- */
 
 /* tools part--------------------------------------- */
-.tools-div {
+.toolsdiv {
     display: flex;
     align-items: center;
     padding: 6% 3%;
@@ -559,14 +498,6 @@ html {
     padding: 2% 3%;
 }
 
-.tools-div h1 {
-    font-size: 2vw;
-    color: #ff4900b0;
-}
-
-.tools-div p {
-    font-size: 1.3vw;
-}
 
 .tools-image {
     max-width: 175%;
@@ -579,7 +510,7 @@ html {
 /* end tools part--------------------------------------- */
 
 /* to do part ------------------------------------------ */
-.todo-content {
+.tododiv {
     display: flex;
     align-items: center;
     padding: 3%;
@@ -599,13 +530,6 @@ html {
     padding: 2% 3%;
 }
 
-.todo-content h1 {
-    font-size: 2vw;
-}
-
-.todo-content p {
-    font-size: 1.3vw;
-}
 
 .todo-image {
     max-width: 130%;
@@ -624,7 +548,7 @@ html {
 /* to do part end ---------------------------------------- */
 
 /* side notes part --------------------------------------- */
-.notes-content {
+.notesdiv {
     display: flex;
     align-items: center;
     padding: 3%;
@@ -644,13 +568,7 @@ html {
     padding: 2% 3%;
 }
 
-.notes-content h1 {
-    font-size: 2vw;
-}
 
-.notes-content p {
-    font-size: 1.3vw;
-}
 
 .notes-image {
     max-width: 130%;
@@ -668,7 +586,7 @@ html {
 
 /* side notes part end ------------------------------------ */
 /* done part ------------------------------------ */
-.done-content {
+.donediv {
     display: flex;
     align-items: center;
     padding: 3%;
@@ -686,14 +604,6 @@ html {
     background-color: #f5f5f5;
     border-radius: 10px;
     padding: 2% 3%;
-}
-
-.done-content h1 {
-    font-size: 2vw;
-}
-
-.done-content p {
-    font-size: 1.3vw;
 }
 
 .done-image {
@@ -723,9 +633,6 @@ html {
     align-items: center;
 }
 
-.line {
-    text-decoration: line-through;
-}
 
 .todo-text,
 .notes-text,

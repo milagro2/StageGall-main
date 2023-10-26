@@ -13,7 +13,7 @@
         <h1>DevOps - CI/CD</h1>
     </header>
     <?php include 'navbar.php'; ?>
-    <div class="sticky-block"id="texT">
+    <div class="sticky-block" id="texT">
         <p>Onderdelen</p>
         <ul>
             <li><a href="#devops-section">Wat is DevOps?</a></li>
@@ -23,8 +23,8 @@
         </ul>
     </div>
     <!-- -----------------------------------Wat is DevOps?----------------------------------- -->
-    <div class="DevOps-content" id="devops-section">
-        <div class="devops-text"id="texT">
+    <div class="DevOpsdiv" id="devops-section">
+        <div class="devops-text" id="texT">
             <h1>Wat is DevOps?</h1>
             <p>
                 DevOps is een manier van werken waarbij de focus ligt op <strong>samenwerking en communicatie</strong>
@@ -51,13 +51,13 @@
                 en updates heb je met DevOps concurrentievoordelen. </p>
         </div>
         <div class="devops-img">
-            <img class="devops-image" src="Devops.png" alt="DevOps"id="texT">
+            <img class="devops-image" src="Devops.png" alt="DevOps" id="texT">
         </div>
     </div>
     <div class="divid"></div>
     <!-- --------------------------------------CI/CD-------------------------------------- -->
     <div class="cicddiv" id="ci-cd-section">
-        <div class="cctext"id="texT">
+        <div class="cctext" id="texT">
             <h1>CI/CD</h1>
             <p>
                 CI/CD automatiseert het bouwen, testen en implementeren van software. Het faciliteert frequente
@@ -90,13 +90,13 @@
             </ul>
         </div>
         <div class="cicdfoto">
-            <img class="ci-cd-image" src="cicd.WEBP" alt="CI/CD"id="texT">
+            <img class="cicdfot" src="cicd.WEBP" alt="CI/CD" id="texT">
         </div>
     </div>
     <div class="divid"></div>
     <!-- -----------------------------------Voordelen van DevOps----------------------------------- -->
-    <div class="benefits-div" id="benefits-section">
-        <div class="benefits-text"id="texT">
+    <div class="benefitdiv" id="benefits-section">
+        <div class="benefits-text" id="texT">
             <h1>Voordelen van DevOps</h1>
             <?php
             $devopsBenefits = [
@@ -121,16 +121,16 @@
             </section>
         </div>
         <div class="benefits-img">
-            <img class="benefits-image" src="benefits.png" alt="DevOps Benefits"id="texT">
+            <img class="benefits-image" src="benefits.png" alt="DevOps Benefits" id="texT">
         </div>
     </div>
     <div class="divid"></div>
     <!-- -----------------------------------DevOps Tools----------------------------------- -->
-    <div class="tools-div" id="tools-section">
+    <div class="toolsdiv" id="tools-section">
         <div class="tools-img">
-            <img class="tools-image" src="tools.png" alt="DevOps Tools"id="texT">
+            <img class="tools-image" src="tools.png" alt="DevOps Tools" id="texT">
         </div>
-        <div class="tools-text"id="texT">
+        <div class="tools-text" id="texT">
             <h1>DevOps Tools</h1>
             <p>
                 Er zijn verschillende tools in de DevOps pipeline. Een paar populaire DevOps tools zijn: Jenkins,

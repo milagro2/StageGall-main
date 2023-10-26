@@ -19,21 +19,20 @@
         <p>Onderdelen</p>
         <ul >
             <li><a href="#todo-section">To Do</a></li>
-            <li class="line"><a href="#progress-section">In progress</a></li>
             <li><a href="#notes-section">Side Notes</a></li>
             <li><a href="#done-section">Done</a></li>
         </ul>
     </div>
     <!-- -----------------------------------To do list----------------------------------- -->
-    <div class="todo-content" id="todo-section">
+    <div class="tododiv" id="todo-section">
 
         <div class="todo-text" id="texT" >
             <h1>Wat is er to do?</h1>
 
             <ul id="todo-list">
                 <li><input type="checkbox"> Fix website bug: switching pages back <br>to light mode</li>
-                <li><input type="checkbox"> Taak 2</li>
-                <li><input type="checkbox"> Taak 3</li>
+                <li><input type="checkbox"> Gespreksverslag in website</li>
+                <li><input type="checkbox"> DevOps in website</li>
             </ul>
         </div>
         <div class="doto-img">
@@ -43,10 +42,9 @@
     </div>
 
     <div class="divid"></div>
-    <!-- -----------------------------------In Progress----------------------------------- -->
 
     <!-- -----------------------------------Side Notes----------------------------------- -->
-    <div class="notes-content" id="notes-section">
+    <div class="notesdiv" id="notes-section">
         
         <div class="notes-text"id="texT">
             <h1>Side notes</h1>
@@ -66,7 +64,7 @@
     <div class="divid"></div>
     
     <!-- -----------------------------------Done----------------------------------- -->
-    <div class="done-content" id="done-section">
+    <div class="donediv" id="done-section">
         
         <div class="done-text"id="texT">
             <h1>Done</h1>

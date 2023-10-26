@@ -13,8 +13,8 @@ $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
                 echo 'class="active "'; ?>>Agile</a></li>
             <li><a href="DevOps.php" <?php if ($current_page == "DevOps.php")
                 echo 'class="active"'; ?>>DevOps</a></li>
-            <li><a href="CICD.php" <?php if ($current_page == "CICD.php")
-                echo 'class="active"'; ?>>CICD</a></li>
+            <li><a href="Gesprek.php" <?php if ($current_page == "CICD.php")
+                echo 'class="active"'; ?>>Gespreksverslag</a></li>
             <li><a href="ToDo.php" <?php if ($current_page == "ToDo.php")
                 echo 'class="active"'; ?>>To do</a></li>
             <li><a href="stageVerslag.php" <?php if ($current_page == "stageVerslag.php")
