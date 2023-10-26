@@ -4,6 +4,7 @@ ul {
     padding: 0;
     font-family: sans-serif;
     transition: ease background-color 0.7s;
+
 }
 
 header {
@@ -12,8 +13,7 @@ header {
     padding: 2%;
     text-align: center;
     font-size: 1.3vw;
-    transition: padding 0.3s;
-
+    transition: color 0.7s ease;
 }
 
 /* navbar style end ------------------------------------------------------- */
@@ -150,6 +150,7 @@ html {
 .donediv p,
 .gesprekdiv p {
     font-size: 1.3vw;
+    transition: ease color 1s;
 }
 
 /* h1 */
@@ -171,6 +172,34 @@ html {
     color: #ff4900b0;
 }
 
+/* divs */
+.DevOpsdiv,
+.tododiv,
+.notesdiv,
+.donediv,
+.manifdiv,
+.agprdiv {
+    display: flex;
+    align-items: center;
+    padding: 3%;
+    margin: 5%;
+}
+
+.todo-text,
+.notes-text,
+.done-text {
+    flex: 2;
+    margin: 0px 30% 0px 0%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 2% 3%;
+    transition: background-color 0.7s ease, color 1s ease;
+}
+
+/* test area */
+.todo-image,
+.sticky-block
+/* test area */
 
 /* agile part-------------------------------------------------------------- */
 .agdiv {
@@ -178,7 +207,6 @@ html {
     align-items: center;
     padding: 3%;
     margin: 2%;
-    /* outline: 4px solid #ff000042; */
 }
 
 .agim {
@@ -211,17 +239,6 @@ html {
 
 /* agile-manifesto part ----------------------------------------------------*/
 
-
-.manifdiv {
-    display: flex;
-    align-items: center;
-    padding: 6% 3%;
-    padding-right: 3%;
-    margin: 2%;
-    text-align: right;
-    /* outline: 4px solid #ff000042; */
-}
-
 .agmaim {
     flex: 1;
 }
@@ -243,15 +260,6 @@ html {
 /* end agile-manifesto part ------------------------------------------------*/
 
 /* begin agile principes part --------------------------------------------- */
-.agprdiv {
-    display: flex;
-    align-items: center;
-    padding: 3%;
-    padding-right: 15%;
-    margin: 2%;
-    /* outline: 4px solid #ff000042; */
-}
-
 
 .agprfots {
     flex: 1;
@@ -260,16 +268,15 @@ html {
 
 .agprtext {
     flex: 2;
-    margin: 0 12% 0 0%;
+    margin: 0 10% 0 0%;
     background-color: #f5f5f5;
     border-radius: 10px;
-    padding: 3%;
-    margin-top: 5%;
+    padding: 2% 3%;
 }
 
 
 .agprfot {
-    max-width: 200%;
+    max-width: 140%;
     height: auto;
     border-radius: 5%;
 }
@@ -296,7 +303,6 @@ html {
     padding-right: 17%;
     margin: 3%;
     text-align: right;
-    /* outline: 4px solid #ff000042; */
 }
 
 .lemum {
@@ -336,7 +342,6 @@ html {
     padding: 3%;
     padding-right: 15%;
     margin: 3%;
-    /* outline: 4px solid #ff000042; */
 }
 
 .scrumfoto {
@@ -357,8 +362,6 @@ html {
     max-width: 175%;
     height: auto;
     padding: 5%;
-    background-color: #f5f5f5;
-    border-radius: 15px;
 }
 
 /* end scrum part --------------------------------------------- */
@@ -369,13 +372,6 @@ html {
 
 
 /* Devops page-------------------------------------------------------------------------------------- */
-.DevOpsdiv {
-    display: flex;
-    align-items: center;
-    padding: 3%;
-    margin: 5%;
-}
-
 .devops-img {
     flex: 1;
     margin-right: 9%;
@@ -396,7 +392,6 @@ html {
     background-color: #f5f5f5;
     border-radius: 15px;
 }
-
 
 
 /* CI/CD part ---------------------------------------------------- */
@@ -452,7 +447,6 @@ html {
     background-color: #f5f5f5;
     border-radius: 10px;
     padding: 2% 3%;
-    list-style: none;
 }
 
 .benefits-img {
@@ -510,24 +504,9 @@ html {
 /* end tools part--------------------------------------- */
 
 /* to do part ------------------------------------------ */
-.tododiv {
-    display: flex;
-    align-items: center;
-    padding: 3%;
-    margin: 5%;
-}
-
 .doto-img {
     flex: 1;
     margin-right: 9%;
-}
-
-.todo-text {
-    flex: 2;
-    margin: 0px 25% 0px 0%;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    padding: 2% 3%;
 }
 
 
@@ -548,26 +527,10 @@ html {
 /* to do part end ---------------------------------------- */
 
 /* side notes part --------------------------------------- */
-.notesdiv {
-    display: flex;
-    align-items: center;
-    padding: 3%;
-    margin: 5%;
-}
-
 .not-img {
     flex: 1;
     margin-right: 9%;
 }
-
-.notes-text {
-    flex: 2;
-    margin: 0px 25% 0px 0%;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    padding: 2% 3%;
-}
-
 
 
 .notes-image {
@@ -586,25 +549,11 @@ html {
 
 /* side notes part end ------------------------------------ */
 /* done part ------------------------------------ */
-.donediv {
-    display: flex;
-    align-items: center;
-    padding: 3%;
-    margin: 5%;
-}
-
 .done-img {
     flex: 1;
     margin-right: 9%;
 }
 
-.done-text {
-    flex: 2;
-    margin: 0px 25% 0px 0%;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    padding: 2% 3%;
-}
 
 .done-image {
     max-width: 130%;
@@ -621,8 +570,6 @@ html {
 }
 
 /* done part end ------------------------------------ */
-/* outline: 4px solid #ff000042; */
-
 
 .sun-moon {
     width: 25px;
@@ -631,13 +578,4 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-.todo-text,
-.notes-text,
-.done-text,
-.todo-image,
-.sticky-block {
-    transition: background-color 0.7s ease, color 0.7s ease;
 }

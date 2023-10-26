@@ -51,7 +51,7 @@
     <div class="manifdiv">
 
         <div class="agmaim">
-            <img class="manifot" src="agileman4.png" alt="agileman"id="texT">
+            <img class="manifot" src="agileman4.png" alt="agileman">
 
         </div>
 
@@ -135,7 +135,7 @@
     <div class="lemudiv" id="lemu-section">
 
         <div class="lemum">
-            <img class="lemufot" src="3mus.png" alt="drie Mu's"id="texT">
+            <img class="lemufot" src="3mus.png" alt="drie Mu's">
 
         </div>
 
@@ -196,7 +196,7 @@
             </p>
         </div>
         <div class="scrumfoto">
-            <img class="scrumfot" src="scrum.png" alt="scrum"id="texT">
+            <img class="scrumfot" src="scrum.png" alt="scrum">
         </div>
 
     </div>

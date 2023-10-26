@@ -33,6 +33,7 @@
                 <li><input type="checkbox"> Fix website bug: switching pages back <br>to light mode</li>
                 <li><input type="checkbox"> Gespreksverslag in website</li>
                 <li><input type="checkbox"> DevOps in website</li>
+                <li><input type="checkbox"> add -texts togheter for transition & style</li>
             </ul>
         </div>
         <div class="doto-img">
