@@ -57,7 +57,7 @@
     <div class="divid"></div>
     <!-- --------------------------------------CI/CD-------------------------------------- -->
     <div class="cicddiv" id="ci-cd-section">
-        <div class="cctext" id="texT">
+        <div class="cc-text" id="texT">
             <h1>CI/CD</h1>
             <p>
                 CI/CD automatiseert het bouwen, testen en implementeren van software. Het faciliteert frequente

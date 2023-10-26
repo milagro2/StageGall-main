@@ -16,12 +16,12 @@
     <div class="gesprekdiv" id="gesprek-section">
         <div class="gesprek-text" id="texT">
             <h1>Gesprek</h1>
-            <p>IT portfolio control - houdt bij waar het geld precies heen gaat in Etos, Gall&Gall en AH. Maakt een
+            <!-- <p>IT portfolio control - houdt bij waar het geld precies heen gaat in Etos, Gall&Gall en AH. Maakt een
                 duideljk
                 overzicht in excel en deelt met Maurice. Zorgt ervoor dat er niet te veel geld naar het ene gaat en te
                 weinig
                 naar het andere.
-            </p>
+            </p> -->
 
         </div>
         <div class="gesprek-img">

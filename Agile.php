@@ -14,23 +14,14 @@
     </header>
 
     <?php include 'navbar.php' ?>
-    <div class="sticky-block"id="texT">
-        <p>Onderdelen</p>
-        <ul>
-            <li><a href="#agile-section">Agile</a></li>
-            <li><a href="#manifest-section">Agile Manifesto</a></li>
-            <li><a href="#agpr-section">Agile Principes</a></li>
-            <li><a href="#lemu-section">Lean & Mu's</a></li>
-            <li><a href="#scrum-section">Scrum</a></li>
-        </ul>
-    </div>
+    
 
     <!-- -----------------------------------Agile----------------------------------- -->
 
     
     <div class="agdiv" id="agile-section">
 
-        <div class="agtext"id="texT">
+        <div class="ag-text"id="texT">
             <h1>Agile</h1>
 
             <p>
@@ -50,19 +41,19 @@
     <!-- -------------------------------------Agile manifesto------------------------------------- -->
     <div class="manifdiv">
 
-        <div class="agmaim">
-            <img class="manifot" src="agileman4.png" alt="agileman">
-
-        </div>
-
-        <div class="agmatext"id="texT">
-
+        
+        <div class="agma-text"id="texT">
+            
             <h1>Agile-Manifesto</h1>
-
+            
             <p>
                 In 2001 heeft een groepje softwareontwikkelaars de Agile Manifesto geschreven. Hierin staan de waarden
                 en principes in van Agile werken. <br> De waarden zijn in de afbeelding links te zien.
             </p>
+            
+        </div>
+        <div class="agmaim">
+            <img class="manifot" src="agileman4.png" alt="agileman">
 
         </div>
     </div>
@@ -72,7 +63,7 @@
     <div class="agprdiv" id="agpr-section">
 
 
-        <div class="agprtext"id="texT">
+        <div class="agpr-text"id="texT">
             <h1>Agile Principes</h1>
 
             <?php
@@ -139,7 +130,7 @@
 
         </div>
 
-        <div class="lemutext"id="texT">
+        <div class="lemu-text"id="texT">
 
             <h1>Lean en de drie Mu's</h1>
             <p>
@@ -183,7 +174,7 @@
 
     <div class="scrumdiv" id="scrum-section">
 
-        <div class="sctext"id="texT">
+        <div class="sc-text"id="texT">
             <h1>Scrum</h1>
 
             <p>
