@@ -1,20 +1,25 @@
 <?php
 session_start();
 
-if (isset($_SESSION['mode']) && $_SESSION['mode'] === 'dark') {
-    echo '<body class="dark-mode">';
-} else {
-    echo '<body class="light-mode">';
-}
-
 if (isset($_SESSION['counter'])) {
     $_SESSION['counter'] += 1;
-} else {
-    $_SESSION['counter'] = 1;
-}
 
-$my_Msg = "This page has been refreshed " . $_SESSION['counter'];
-$my_Msg .= " times during this session.";
+    // true = darkmode
+    if ($_SESSION['counter'] == 1) {
+        $_SESSION['test'] = 'true';
+
+    } else {
+        $_SESSION['counter'] -= 2;
+        $_SESSION['test'] = 'false';
+    }
+
+} else {
+    $_SESSION['counter'] = 4;
+    $_SESSION['test'] = 'false';
+}
+$ttes = $_SESSION["test"];
+$my_Msg = "it is " . $_SESSION['counter'];
+
 ?>
 
 <!-- if counter = 1 isBlack = true -->
