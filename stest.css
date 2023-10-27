@@ -4,7 +4,7 @@ ul {
     padding: 0;
     font-family: sans-serif;
     transition: ease background-color 0.7s;
-
+    
 }
 
 header {
@@ -13,8 +13,9 @@ header {
     padding: 2%;
     text-align: center;
     font-size: 1.3vw;
-    transition: color 0.7s ease;
+    transition: background-color 0.7s ease, color 1s ease;
 }
+
 
 /* navbar style end ------------------------------------------------------- */
 
@@ -105,6 +106,7 @@ nav li:hover a {
     border-radius: 0 0 0 10px;
     font-size: 1vw;
     padding-bottom: 30%;
+    transition: background-color 0.7s ease, color 1s ease;
 }
 
 .sticky-block p {
@@ -125,6 +127,7 @@ nav li:hover a {
 .sticky-block a {
     text-decoration: none;
     color: #000000;
+    transition: color 1s ease;
 }
 
 .sticky-block a:hover {
@@ -214,10 +217,13 @@ html {
     transition: background-color 0.7s ease, color 1s ease;
 }
 
+img {
+    transition: background-color 0.7s ease;
+}
+
 /* test area */
 
-/* .todo-image,
-.sticky-block */
+/* .todo-image, */
 /* test area */
 
 /* agile part-------------------------------------------------------------- */

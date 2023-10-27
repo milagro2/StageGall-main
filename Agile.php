@@ -1,3 +1,23 @@
+<?php
+session_start();
+
+if (isset($_SESSION['mode']) && $_SESSION['mode'] === 'dark') {
+    echo '<body class="dark-mode">';
+} else {
+    echo '<body class="light-mode">';
+}
+
+if (isset($_SESSION['counter'])) {
+    $_SESSION['counter'] += 1;
+} else {
+    $_SESSION['counter'] = 1;
+}
+
+$my_Msg = "This page has been refreshed " . $_SESSION['counter'];
+$my_Msg .= " times during this session.";
+?>
+
+<!-- if counter = 1 isBlack = true -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,20 +30,34 @@
 
 <body>
     <header id="page-top">
+        <div id="header-background" class="light-mode"></div>
         <h1>Agile - Scrum</h1>
     </header>
 
     <?php include 'navbar.php' ?>
-    
+    <div class="sticky-block" id="texT">
+        <p>Onderdelen</p>
+        <ul>
+            <li><a href="#agile-section">Agile</a></li>
+            <li><a href="#manifest-section">Agile Manifesto</a></li>
+            <li><a href="#agpr-section">Agile Principes</a></li>
+            <li><a href="#lemu-section">Lean & Mu's</a></li>
+            <li><a href="#scrum-section">Scrum</a></li>
+        </ul>
+    </div>
 
     <!-- -----------------------------------Agile----------------------------------- -->
 
-    
+
     <div class="agdiv" id="agile-section">
 
-        <div class="ag-text"id="texT">
+        <div class="ag-text" id="texT">
             <h1>Agile</h1>
-
+            <p>
+                
+                <?php echo ($my_Msg);
+                echo " User is: ".$_SESSION["name"];   ?>
+            </p>
             <p>
                 Agile is een <strong>flexibele </strong>manier van werken waarbij het grootste belang <strong>klanten
                     tevreden </strong>houden is. Er kunnen <strong>snel </strong>en <strong>efficiënt
@@ -32,7 +66,7 @@
             </p>
         </div>
         <div class="agim">
-            <img class="agilefot" src="agile2.webp" alt="agile"id="texT">
+            <img class="agilefot" src="agile2.webp" alt="agile" id="texT">
 
         </div>
     </div>
@@ -41,16 +75,16 @@
     <!-- -------------------------------------Agile manifesto------------------------------------- -->
     <div class="manifdiv">
 
-        
-        <div class="agma-text"id="texT">
-            
+
+        <div class="agma-text" id="texT">
+
             <h1>Agile-Manifesto</h1>
-            
+
             <p>
                 In 2001 heeft een groepje softwareontwikkelaars de Agile Manifesto geschreven. Hierin staan de waarden
                 en principes in van Agile werken. <br> De waarden zijn in de afbeelding links te zien.
             </p>
-            
+
         </div>
         <div class="agmaim">
             <img class="manifot" src="agileman4.png" alt="agileman">
@@ -63,7 +97,7 @@
     <div class="agprdiv" id="agpr-section">
 
 
-        <div class="agpr-text"id="texT">
+        <div class="agpr-text" id="texT">
             <h1>Agile Principes</h1>
 
             <?php
@@ -117,7 +151,7 @@
 
         </div>
         <div class="agprfots">
-            <img class="agprfot" src="agileprins.webp" alt="agilepri"id="texT">
+            <img class="agprfot" src="agileprins.webp" alt="agilepri" id="texT">
         </div>
     </div>
 
@@ -130,7 +164,7 @@
 
         </div>
 
-        <div class="lemu-text"id="texT">
+        <div class="lemu-text" id="texT">
 
             <h1>Lean en de drie Mu's</h1>
             <p>
@@ -174,7 +208,7 @@
 
     <div class="scrumdiv" id="scrum-section">
 
-        <div class="sc-text"id="texT">
+        <div class="sc-text" id="texT">
             <h1>Scrum</h1>
 
             <p>
@@ -195,20 +229,8 @@
     <div class="divid"></div>
     <!-- --------------------------------------Scrum end-------------------------------------- -->
     <script src="script.js"></script>
-</body=>
+
+    
+    </body=>
 
 </html>
-
-
-
-<!-- gall organisate
-afspraak maken hugo - wat is jouw rol - wat doe jij oan precies - kan jij mij alles vertellen over de IT aplicaties van gall&gall
-afspraak maken anneke - wat is jouw rol - wat doe jij dan precies
-afspraak maken erwin - wat is jouw rol - wat doe jij dan precies
-afspraak maken maurice - wat is jouw rol - wat doe jij dan precies 
-afspraak maken dajana - wat is jouw rol - wat doe jij dan precies
-afspraak maken wouter bas - wat is jouw rol - wat doe jij dan precies 
-afspraak maken roopesh - wat is jouw rol - wat doe jij dan precies -->
-<!-- elk gesprek gespreksverslag
-afspraak maken maurice & vladimir kurganov - wat is jouw rol - wat doe jij dan precies - kan je me helpen opzetten pipeline -->
-<!-- deze week hugo & maurice + vladimir -->
