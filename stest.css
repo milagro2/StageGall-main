@@ -3,8 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    transition: ease background-color 0.7s;
-    
+    transition: ease background-color 0.7s;    
 }
 
 header {

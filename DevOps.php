@@ -11,7 +11,6 @@ if (isset($_SESSION['counter'])) {
     } else {
         $_SESSION['counter'] -= 2;
         $_SESSION['test'] = 'false';
-
     }
 
 } else {
@@ -20,10 +19,9 @@ if (isset($_SESSION['counter'])) {
 }
 $ttes = $_SESSION["test"];
 $my_Msg = "it is " . $_SESSION['counter'];
-
 ?>
 
-<!-- if counter +1 isBlack = true or false -->
+<!-- if counter == 1, isBlack = true or false -->
 
 
 <!DOCTYPE html>
