@@ -1,28 +1,32 @@
 <?php
 session_start();
 
-if (isset($_SESSION['counter'])) {
-    $_SESSION['counter'] += 1;
-
-    // true = darkmode
-    if ($_SESSION['counter'] == 1) {
-        $_SESSION['test'] = 'true';
-
-    } else {
-        $_SESSION['counter'] -= 2;
-        $_SESSION['test'] = 'false';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['mode'])) {
+        if ($_POST['mode'] == "Dark") {
+            $_SESSION['name'] = "Dark";
+            $_SESSION['counter'] = 1;
+        } elseif ($_POST['mode'] == "Light") {
+            $_SESSION['name'] = "Light";
+            $_SESSION['counter'] = 0;
+        }
     }
-
-} else {
-    $_SESSION['counter'] = 4;
-    $_SESSION['test'] = 'false';
 }
-$ttes = $_SESSION["test"];
-$my_Msg = "it is " . $_SESSION['counter'];
-
 ?>
+<?php // if (isset($_SESSION['counter'])) {
+//     $_SESSION['counter'] == 1;
+// }
+// if ($_SESSION['counter'] == 0) {
+//     $_SESSION['test'] = 'false';
 
-<!-- if counter = 1 isBlack = true -->
+// } else if ($_SESSION['counter'] >= 1) {
+//     $_SESSION['test'] = 'true';
+// }
+// $ttes = $_SESSION["test"];
+// $my_Msg = "it is " . $_SESSION['counter'];?>
+
+<!-- if press button change name (dark or light) and if dark = isBlack = true / if light = isBlack = false -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -59,9 +63,12 @@ $my_Msg = "it is " . $_SESSION['counter'];
         <div class="ag-text" id="texT">
             <h1>Agile</h1>
             <p>
-                
-                <?php echo ($my_Msg);
-                echo " User is: ".$_SESSION["name"];   ?>
+            <form method="post" action="">
+                <input type="submit" name="mode" value="Dark">
+                <input type="submit" name="mode" value="Light">
+            </form>
+            <?php
+            echo " The style is: " . $_SESSION["name"]; ?>
             </p>
             <p>
                 Agile is een <strong>flexibele </strong>manier van werken waarbij het grootste belang <strong>klanten
@@ -235,7 +242,7 @@ $my_Msg = "it is " . $_SESSION['counter'];
     <!-- --------------------------------------Scrum end-------------------------------------- -->
     <script src="script.js"></script>
 
-    
+
     </body=>
 
 </html>

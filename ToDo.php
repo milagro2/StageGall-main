@@ -1,3 +1,20 @@
+<?php
+session_start();
+
+if (isset($_SESSION['counter'])) {
+    $_SESSION['counter'] == 1;
+
+    if ($_SESSION['counter'] == 0) {
+        $_SESSION['test'] = 'false';
+
+    } else if ($_SESSION['counter'] >= 1) {
+        $_SESSION['test'] = 'true';
+    }
+}
+$ttes = $_SESSION["test"];
+$my_Msg = "it is " . $_SESSION['counter'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,10 +31,10 @@
     </header>
 
     <?php include 'navbar.php' ?>
-    <div class="sticky-block"id="texT">
+    <div class="sticky-block" id="texT">
 
         <p>Onderdelen</p>
-        <ul >
+        <ul>
             <li><a href="#todo-section">To Do</a></li>
             <li><a href="#notes-section">Side Notes</a></li>
             <li><a href="#done-section">Done</a></li>
@@ -26,7 +43,7 @@
     <!-- -----------------------------------To do list----------------------------------- -->
     <div class="tododiv" id="todo-section">
 
-        <div class="todo-text" id="texT" >
+        <div class="todo-text" id="texT">
             <h1>Wat is er to do?</h1>
 
             <ul id="todo-list">
@@ -46,10 +63,10 @@
 
     <!-- -----------------------------------Side Notes----------------------------------- -->
     <div class="notesdiv" id="notes-section">
-        
-        <div class="notes-text"id="texT">
+
+        <div class="notes-text" id="texT">
             <h1>Side notes</h1>
-            
+
             <ul id="notes-list">
                 <li>salesforce, commerce cloud en service cloud</li>
                 <li>branch strategie</li>
@@ -59,17 +76,17 @@
         <div class="bnot-img">
             <img class="notes-image" src="notes.png" alt="notes">
         </div>
-        
+
     </div>
-    
+
     <div class="divid"></div>
-    
+
     <!-- -----------------------------------Done----------------------------------- -->
     <div class="donediv" id="done-section">
-        
-        <div class="done-text"id="texT">
+
+        <div class="done-text" id="texT">
             <h1>Done</h1>
-            
+
             <ul id="done-list">
                 <li></li>
                 <li></li>
@@ -79,11 +96,11 @@
         <div class="gedaan-img">
             <img class="done-image" src="done.png" alt="done">
         </div>
-        
+
     </div>
-    
+
     <div class="divid"></div>
-    
+
 
     <script src="script.js"></script>
 </body>
