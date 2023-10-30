@@ -11,7 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['counter'] = 0;
         }
     }
-
+    header("Location: http://localhost/StageGall-main/Agile.php?mode=" . $_POST['mode']);
+    exit();
 }
 ?>
 
@@ -66,8 +67,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="ag-text" id="texT">
             <h1>Agile</h1>
             <p>
-            <button onclick="myFunction()">Toggle dark mode</button>
-            <form method="post" action="" >
+                <button onclick="myFunction()">Toggle dark mode</button>
+            <form method="post" action="">
                 <input type="submit" name="mode" value="Dark">
                 <input type="submit" name="mode" value="Light">
             </form>

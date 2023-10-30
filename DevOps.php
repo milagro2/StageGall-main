@@ -11,7 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['counter'] = 0;
         }
     }
-
+    header("Location: http://localhost/StageGall-main/DevOps.php?mode=" . $_POST['mode']);
+    exit();
 }
 ?>
 
@@ -43,9 +44,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <li><a href="#tools-section">DevOps Tools</a></li>
             <li>
                 <?php
-                echo " The style is: " . $_SESSION["name"]; 
+                echo " The style is: " . $_SESSION["name"];
                 ?>
-                
+                <form method="post" action="">
+                    <input type="submit" name="mode" value="Dark">
+                    <input type="submit" name="mode" value="Light">
+                </form>
                 </p>
             </li>
         </ul>
