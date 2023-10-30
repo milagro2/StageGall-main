@@ -32,7 +32,7 @@ $my_Msg = "it is " . $_SESSION['counter'];
 
     <?php include 'navbar.php' ?>
     <div class="sticky-block" id="texT">
-
+        
         <p>Onderdelen</p>
         <ul>
             <li><a href="#todo-section">To Do</a></li>
@@ -42,10 +42,10 @@ $my_Msg = "it is " . $_SESSION['counter'];
     </div>
     <!-- -----------------------------------To do list----------------------------------- -->
     <div class="tododiv" id="todo-section">
-
+        
         <div class="todo-text" id="texT">
             <h1>Wat is er to do?</h1>
-
+            
             <ul id="todo-list">
                 <li><input type="checkbox"> Fix website bug: switching pages back <br>to light mode</li>
                 <li><input type="checkbox"> Gespreksverslag in website</li>
@@ -56,17 +56,17 @@ $my_Msg = "it is " . $_SESSION['counter'];
         <div class="doto-img">
             <img class="todo-image" src="todo.png" alt="todo">
         </div>
-
+        
     </div>
-
+    
     <div class="divid"></div>
 
     <!-- -----------------------------------Side Notes----------------------------------- -->
     <div class="notesdiv" id="notes-section">
-
+        
         <div class="notes-text" id="texT">
             <h1>Side notes</h1>
-
+            
             <ul id="notes-list">
                 <li>salesforce, commerce cloud en service cloud</li>
                 <li>branch strategie</li>
@@ -76,17 +76,17 @@ $my_Msg = "it is " . $_SESSION['counter'];
         <div class="bnot-img">
             <img class="notes-image" src="notes.png" alt="notes">
         </div>
-
+        
     </div>
-
+    
     <div class="divid"></div>
-
+    
     <!-- -----------------------------------Done----------------------------------- -->
     <div class="donediv" id="done-section">
-
+        
         <div class="done-text" id="texT">
             <h1>Done</h1>
-
+            
             <ul id="done-list">
                 <li></li>
                 <li></li>
@@ -96,12 +96,13 @@ $my_Msg = "it is " . $_SESSION['counter'];
         <div class="gedaan-img">
             <img class="done-image" src="done.png" alt="done">
         </div>
-
+        
     </div>
-
+    
     <div class="divid"></div>
-
-
+    
+    
+    <?php include 'script.php' ?>
     <script src="script.js"></script>
 </body>
 

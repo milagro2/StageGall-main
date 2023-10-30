@@ -11,8 +11,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['counter'] = 0;
         }
     }
+
 }
 ?>
+
+
 <?php // if (isset($_SESSION['counter'])) {
 //     $_SESSION['counter'] == 1;
 // }
@@ -63,7 +66,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="ag-text" id="texT">
             <h1>Agile</h1>
             <p>
-            <form method="post" action="">
+            <button onclick="myFunction()">Toggle dark mode</button>
+            <form method="post" action="" >
                 <input type="submit" name="mode" value="Dark">
                 <input type="submit" name="mode" value="Light">
             </form>
@@ -240,6 +244,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="divid"></div>
     <!-- --------------------------------------Scrum end-------------------------------------- -->
+    <?php include 'script.php' ?>
     <script src="script.js"></script>
 
 
