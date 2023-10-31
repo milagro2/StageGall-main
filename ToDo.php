@@ -1,19 +1,17 @@
 <?php
 session_start();
 
-if (isset($_SESSION['counter'])) {
-    $_SESSION['counter'] == 1;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_SESSION['theme'])) {
+        $theme = $_SESSION['theme'];
 
-    if ($_SESSION['counter'] == 0) {
-        $_SESSION['test'] = 'false';
-
-    } else if ($_SESSION['counter'] >= 1) {
-        $_SESSION['test'] = 'true';
+    } else {
+        $theme = "Light";
     }
 }
-$ttes = $_SESSION["test"];
-$my_Msg = "it is " . $_SESSION['counter'];
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
