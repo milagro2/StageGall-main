@@ -125,7 +125,7 @@ nav li:hover a {
 
 .sticky-block a {
     text-decoration: none;
-    color: #000000;
+    /* color: #000000; */
     transition: color 1s ease;
 }
 

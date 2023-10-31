@@ -24,14 +24,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps</title>
     <link rel="stylesheet" href="stest.css">
-    <?php include 'style.php'?>
+    <?php include 'style.php' ?>
 </head>
 
 <body>
+
     <header id="page-top">
         <h1>DevOps - CI/CD</h1>
     </header>
-    <?php include 'navbar.php'?>
+    <?php include 'navbar.php' ?>
     <div class="sticky-block" id="texT">
         <p>Onderdelen</p>
         <ul>
@@ -183,7 +184,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
     <div class="divid"></div>
-    <?php include 'script.php' ?>
     <script src="script.js"></script>
 
 </body>

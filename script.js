@@ -7,18 +7,28 @@ window.onscroll = function () {
     }
 };
 
+window.onload = function () {
+    var scrollPos = sessionStorage.getItem('scrollPos');
+    if (scrollPos) {
+        window.scrollTo(0, scrollPos);
+        sessionStorage.removeItem('scrollPos');
+    }
+};
 
+window.onbeforeunload = function () {
+    sessionStorage.setItem('scrollPos', window.scrollY);
+};
 
 // dark/light mode
 
 let isBlack = false;
 const body = document.body;
 const sunMoon = document.getElementById("sun-moon");
-const TextDivs = document.querySelectorAll("div[id^='texT']");
+const TextDivs = document.querySelectorAll("div[id^='texT']"); //done
 const BackColor = [];
 const TextColor = document.querySelectorAll(".todo-text, .notes-text, .done-text, .sticky-block, .sticky-block a");
-const HeadColor = document.querySelector("header");
-const Images = document.querySelectorAll("img[id^='texT']");
+const HeadColor = document.querySelector("header");//done
+const Images = document.querySelectorAll("img[id^='texT']");//done
 
 
 const originalColors = {

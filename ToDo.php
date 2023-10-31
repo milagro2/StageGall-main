@@ -23,6 +23,7 @@ $my_Msg = "it is " . $_SESSION['counter'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo</title>
     <link rel="stylesheet" href="stest.css">
+    <?php include 'style.php' ?>
 </head>
 
 <body>
@@ -38,6 +39,24 @@ $my_Msg = "it is " . $_SESSION['counter'];
             <li><a href="#todo-section">To Do</a></li>
             <li><a href="#notes-section">Side Notes</a></li>
             <li><a href="#done-section">Done</a></li>
+            <li>
+                <form method="post" action="">
+                    <button type="submit" name="theme" value="Dark"
+                        class="<?php echo $_SESSION['theme'] === 'Dark' ? 'selected' : ''; ?>">Dark</button>
+                    <button type="submit" name="theme" value="Light"
+                        class="<?php echo $_SESSION['theme'] === 'Light' ? 'selected' : ''; ?>">Light</button>
+                </form>
+                <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (isset($_POST['theme'])) {
+                        $_SESSION['theme'] = $_POST['theme'];
+                        header("Location: ToDo.php");
+                        exit();
+                    }
+                }
+                echo "The style is: " . (isset($_SESSION["theme"]) ? $_SESSION["theme"] : "Light");
+                ?>
+            </li>
         </ul>
     </div>
     <!-- -----------------------------------To do list----------------------------------- -->
@@ -102,7 +121,7 @@ $my_Msg = "it is " . $_SESSION['counter'];
     <div class="divid"></div>
 
 
-    <?php include 'script.php' ?>
+
     <script src="script.js"></script>
 </body>
 

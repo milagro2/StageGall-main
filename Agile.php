@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="header-background" class="light-mode"></div>
         <h1>Agile - Scrum</h1>
     </header>
-
+    
     <?php include 'navbar.php' ?>
     <div class="sticky-block" id="texT">
         <p>Onderdelen</p>
@@ -53,17 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <li><a href="#agpr-section">Agile Principes</a></li>
             <li><a href="#lemu-section">Lean & Mu's</a></li>
             <li><a href="#scrum-section">Scrum</a></li>
-        </ul>
-    </div>
-
-    <!-- -----------------------------------Agile----------------------------------- -->
-
-
-    <div class="agdiv" id="agile-section">
-
-        <div class="ag-text" id="texT">
-            <h1>Agile</h1>
-            <p>
+            <li>
             <form method="post" action="">
                 <button type="submit" name="theme" value="Dark"
                     class="<?php echo $_SESSION['theme'] === 'Dark' ? 'selected' : ''; ?>">Dark</button>
@@ -80,8 +70,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
             echo "The style is: " . (isset($_SESSION["theme"]) ? $_SESSION["theme"] : "Light");
             ?>
-            </p>
+            </li>
+        </ul>
+    </div>
 
+    <!-- -----------------------------------Agile----------------------------------- -->
+
+    
+    <div class="agdiv" id="agile-section">
+        
+        <div class="ag-text" id="texT">
+            <h1>Agile</h1>
+            
 
             <p>
                 Agile is een <strong>flexibele </strong>manier van werken waarbij het grootste belang <strong>klanten
@@ -161,7 +161,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ?>
 
             <section class="agile-principles">
-
                 <ol>
                     <?php foreach ($agilePrinciples as $principle): ?>
                         <li>
@@ -169,7 +168,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         </li>
                     <?php endforeach; ?>
                 </ol>
-
             </section>
 
 
@@ -253,7 +251,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <div class="divid"></div>
     <!-- --------------------------------------Scrum end-------------------------------------- -->
-    <?php include 'script.php' ?>
     <script src="script.js"></script>
 
 
