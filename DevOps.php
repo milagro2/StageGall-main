@@ -2,18 +2,14 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['mode'])) {
-        if ($_POST['mode'] == "Dark") {
-            $_SESSION['name'] = "Dark";
-            $_SESSION['counter'] = 1;
-        } elseif ($_POST['mode'] == "Light") {
-            $_SESSION['name'] = "Light";
-            $_SESSION['counter'] = 0;
-        }
+    if (isset($_SESSION['theme'])) {
+        $theme = $_SESSION['theme'];
+
+    } else {
+        $theme = "Light";
     }
-    header("Location: http://localhost/StageGall-main/DevOps.php?mode=" . $_POST['mode']);
-    exit();
 }
+
 ?>
 
 
@@ -28,13 +24,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevOps</title>
     <link rel="stylesheet" href="stest.css">
+    <?php include 'style.php'?>
 </head>
 
 <body>
     <header id="page-top">
         <h1>DevOps - CI/CD</h1>
     </header>
-    <?php include 'navbar.php'; ?>
+    <?php include 'navbar.php'?>
     <div class="sticky-block" id="texT">
         <p>Onderdelen</p>
         <ul>
@@ -43,14 +40,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <li><a href="#benefits-section">Voordelen van DevOps</a></li>
             <li><a href="#tools-section">DevOps Tools</a></li>
             <li>
-                <?php
-                echo " The style is: " . $_SESSION["name"];
-                ?>
+                <p>
                 <form method="post" action="">
-                    <input type="submit" name="mode" value="Dark">
-                    <input type="submit" name="mode" value="Light">
+                    <button type="submit" name="theme" value="Dark"
+                        class="<?php echo $_SESSION['theme'] === 'Dark' ? 'selected' : ''; ?>">Dark</button>
+                    <button type="submit" name="theme" value="Light"
+                        class="<?php echo $_SESSION['theme'] === 'Light' ? 'selected' : ''; ?>">Light</button>
                 </form>
+                <?php
+                if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                    if (isset($_POST['theme'])) {
+                        $_SESSION['theme'] = $_POST['theme'];
+                        header("Location: DevOps.php");
+                        exit();
+                    }
+                }
+                echo "The style is: " . (isset($_SESSION["theme"]) ? $_SESSION["theme"] : "Light");
+                ?>
                 </p>
+
+
             </li>
         </ul>
     </div>

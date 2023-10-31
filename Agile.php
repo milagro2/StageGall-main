@@ -2,18 +2,14 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_POST['mode'])) {
-        if ($_POST['mode'] == "Dark") {
-            $_SESSION['name'] = "Dark";
-            $_SESSION['counter'] = 1;
-        } elseif ($_POST['mode'] == "Light") {
-            $_SESSION['name'] = "Light";
-            $_SESSION['counter'] = 0;
-        }
+    if (isset($_SESSION['theme'])) {
+        $theme = $_SESSION['theme'];
+
+    } else {
+        $theme = "Light";
     }
-    header("Location: http://localhost/StageGall-main/Agile.php?mode=" . $_POST['mode']);
-    exit();
 }
+
 ?>
 
 
@@ -39,6 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agile</title>
     <link rel="stylesheet" href="stest.css">
+    <?php include 'style.php'?>
 </head>
 
 <body>
@@ -67,14 +64,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="ag-text" id="texT">
             <h1>Agile</h1>
             <p>
-                <button onclick="myFunction()">Toggle dark mode</button>
             <form method="post" action="">
-                <input type="submit" name="mode" value="Dark">
-                <input type="submit" name="mode" value="Light">
+                <button type="submit" name="theme" value="Dark"
+                    class="<?php echo $_SESSION['theme'] === 'Dark' ? 'selected' : ''; ?>">Dark</button>
+                <button type="submit" name="theme" value="Light"
+                    class="<?php echo $_SESSION['theme'] === 'Light' ? 'selected' : ''; ?>">Light</button>
             </form>
             <?php
-            echo " The style is: " . $_SESSION["name"]; ?>
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                if (isset($_POST['theme'])) {
+                    $_SESSION['theme'] = $_POST['theme'];
+                    header("Location: Agile.php");
+                    exit();
+                }
+            }
+            echo "The style is: " . (isset($_SESSION["theme"]) ? $_SESSION["theme"] : "Light");
+            ?>
             </p>
+
+
             <p>
                 Agile is een <strong>flexibele </strong>manier van werken waarbij het grootste belang <strong>klanten
                     tevreden </strong>houden is. Er kunnen <strong>snel </strong>en <strong>efficiënt
