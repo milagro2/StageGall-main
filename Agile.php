@@ -144,7 +144,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 
         </div>
         <div class="agprfots">
-            <img class="agprfot" src="agileprins.webp" alt="agilepri" id="texT">
+            <img class="agprfot" src="agileprins.png" alt="agilepri" id="agpri">
         </div>
     </div>
 

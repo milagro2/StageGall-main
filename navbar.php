@@ -34,6 +34,10 @@ $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
 
                     <button type="submit" name="theme" value="Light"
                         class="<?php echo $_SESSION['theme'] === 'Light' ? 'selected' : ''; ?>">Light</button>
+
+                    <button type="submit" name="theme" value="Neon"
+                        class="<?php echo $theme === 'Neon' ? 'selected' : ''; ?>">Neon</button>
+
                 </form>
 
             </li>
