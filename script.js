@@ -7,6 +7,7 @@ window.onscroll = function () {
     }
 };
 
+// scroll to location of button press
 window.onload = function () {
     var scrollPos = sessionStorage.getItem('scrollPos');
     if (scrollPos) {
@@ -15,9 +16,14 @@ window.onload = function () {
     }
 };
 
-window.onbeforeunload = function () {
-    sessionStorage.setItem('scrollPos', window.scrollY);
-};
+document.addEventListener('DOMContentLoaded', function() {
+    var themeButtons = document.querySelectorAll('button[name="theme"]');
+    themeButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            sessionStorage.setItem('scrollPos', window.scrollY);
+        });
+    });
+});
 
 // dark/light mode
 

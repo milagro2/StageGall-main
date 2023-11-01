@@ -7,13 +7,10 @@
             echo "color: #ffffffba;";
             echo "#texT { background-color: black; }";
 
-
         } else {
             echo "background-color: white;";
             echo "color: black;";
             echo "#texT { background-color: #f4f4f4; }";
-
-
         }
         ?>
     }
