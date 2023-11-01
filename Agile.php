@@ -2,30 +2,17 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_SESSION['theme'])) {
-        $theme = $_SESSION['theme'];
-
-    } else {
-        $theme = "Light";
+    if (isset($_POST['theme'])) {
+        $_SESSION['theme'] = $_POST['theme'];
+        header("Location: Agile.php");
+        exit();
     }
 }
 
+$theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 ?>
 
 
-<?php // if (isset($_SESSION['counter'])) {
-//     $_SESSION['counter'] == 1;
-// }
-// if ($_SESSION['counter'] == 0) {
-//     $_SESSION['test'] = 'false';
-
-// } else if ($_SESSION['counter'] >= 1) {
-//     $_SESSION['test'] = 'true';
-// }
-// $ttes = $_SESSION["test"];
-// $my_Msg = "it is " . $_SESSION['counter'];?>
-
-<!-- if press button change name (dark or light) and if dark = isBlack = true / if light = isBlack = false -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agile</title>
     <link rel="stylesheet" href="stest.css">
-    <?php include 'style.php'?>
+    <?php include 'style.php' ?>
 </head>
 
 <body>
@@ -43,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div id="header-background" class="light-mode"></div>
         <h1>Agile - Scrum</h1>
     </header>
-    
+
     <?php include 'navbar.php' ?>
     <div class="sticky-block" id="texT">
         <p>Onderdelen</p>
@@ -53,35 +40,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <li><a href="#agpr-section">Agile Principes</a></li>
             <li><a href="#lemu-section">Lean & Mu's</a></li>
             <li><a href="#scrum-section">Scrum</a></li>
-            <li>
-            <form method="post" action="">
-                <button type="submit" name="theme" value="Dark"
-                    class="<?php echo $_SESSION['theme'] === 'Dark' ? 'selected' : ''; ?>">Dark</button>
-                <button type="submit" name="theme" value="Light"
-                    class="<?php echo $_SESSION['theme'] === 'Light' ? 'selected' : ''; ?>">Light</button>
-            </form>
-            <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                if (isset($_POST['theme'])) {
-                    $_SESSION['theme'] = $_POST['theme'];
-                    header("Location: Agile.php");
-                    exit();
-                }
-            }
-            echo "The style is: " . (isset($_SESSION["theme"]) ? $_SESSION["theme"] : "Light");
-            ?>
-            </li>
+
         </ul>
     </div>
 
     <!-- -----------------------------------Agile----------------------------------- -->
 
-    
+
     <div class="agdiv" id="agile-section">
-        
+
         <div class="ag-text" id="texT">
             <h1>Agile</h1>
-            
+
 
             <p>
                 Agile is een <strong>flexibele </strong>manier van werken waarbij het grootste belang <strong>klanten

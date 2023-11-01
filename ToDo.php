@@ -2,15 +2,16 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_SESSION['theme'])) {
-        $theme = $_SESSION['theme'];
-
-    } else {
-        $theme = "Light";
+    if (isset($_POST['theme'])) {
+        $_SESSION['theme'] = $_POST['theme'];
+        header("Location: ToDo.php");
+        exit();
     }
 }
 
+$theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 ?>
+
 
 
 <!DOCTYPE html>
@@ -37,24 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <li><a href="#todo-section">To Do</a></li>
             <li><a href="#notes-section">Side Notes</a></li>
             <li><a href="#done-section">Done</a></li>
-            <li>
-                <form method="post" action="">
-                    <button type="submit" name="theme" value="Dark"
-                        class="<?php echo $_SESSION['theme'] === 'Dark' ? 'selected' : ''; ?>">Dark</button>
-                    <button type="submit" name="theme" value="Light"
-                        class="<?php echo $_SESSION['theme'] === 'Light' ? 'selected' : ''; ?>">Light</button>
-                </form>
-                <?php
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    if (isset($_POST['theme'])) {
-                        $_SESSION['theme'] = $_POST['theme'];
-                        header("Location: ToDo.php");
-                        exit();
-                    }
-                }
-                echo "The style is: " . (isset($_SESSION["theme"]) ? $_SESSION["theme"] : "Light");
-                ?>
-            </li>
+
         </ul>
     </div>
     <!-- -----------------------------------To do list----------------------------------- -->

@@ -1,47 +1,24 @@
 <style>
-
-    body {
-        <?php
-        if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Dark') {
-            echo "background-color: #191919;";
-            echo "color: #ffffffba;";
-            echo "#texT { background-color: black; }";
-
-        } else {
-            echo "background-color: white;";
-            echo "color: black;";
-            echo "#texT { background-color: #f4f4f4; }";
-        }
-        ?>
+    <?php
+    if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Dark') {
+        echo ".sticky-block a { color: #ffffffba; }";
+        echo ".sticky-block a:hover { color: #ff4900b0; }";
+        echo "body {";
+        echo "background-color: #191919;";
+        echo "color: #ffffffba;";
+        echo "}";
+        echo "#texT { background-color: black; }";
+        echo "header { background: black; }";
+        echo "header { color: #ff4900b0; }";
+    } else {
+        echo ".sticky-block a { color: black; }";
+        echo ".sticky-block a:hover { color: #ff3a03; }";
+        echo "body {";
+        echo "background-color: white;";
+        echo "color: black;";
+        echo "}";
+        echo "#texT { background-color: #f4f4f4; }";
+        echo "header { background: linear-gradient(to right, #881700, #ff6000, #881700; }";
     }
-
-    header {
-        <?php
-        if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Dark') {
-            echo "background: black;";
-            echo "color: #ff4900b0;";
-        } else {
-            echo "background: linear-gradient(to right, #881700, #ff6000, #881700);";
-        }
-        ?>
-    }  
-    .sticky-block a {
-        <?php
-        if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Dark') {
-            echo "color: #red;";
-        } else {
-            echo "color: #green;";
-        }
-        ?>
-    }  
-    
-
-
-    
-
-
-    button.selected {
-        background-color: hotpink;
-
-    }
+    ?>
 </style>

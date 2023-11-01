@@ -2,17 +2,15 @@
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (isset($_SESSION['theme'])) {
-        $theme = $_SESSION['theme'];
-
-    } else {
-        $theme = "Light";
+    if (isset($_POST['theme'])) {
+        $_SESSION['theme'] = $_POST['theme'];
+        header("Location: DevOps.php");
+        exit();
     }
 }
 
+$theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 ?>
-
-
 
 
 
@@ -40,28 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <li><a href="#ci-cd-section">CI/CD</a></li>
             <li><a href="#benefits-section">Voordelen van DevOps</a></li>
             <li><a href="#tools-section">DevOps Tools</a></li>
-            <li>
-                <p>
-                <form method="post" action="">
-                    <button type="submit" name="theme" value="Dark"
-                        class="<?php echo $_SESSION['theme'] === 'Dark' ? 'selected' : ''; ?>">Dark</button>
-                    <button type="submit" name="theme" value="Light"
-                        class="<?php echo $_SESSION['theme'] === 'Light' ? 'selected' : ''; ?>">Light</button>
-                </form>
-                <?php
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    if (isset($_POST['theme'])) {
-                        $_SESSION['theme'] = $_POST['theme'];
-                        header("Location: DevOps.php");
-                        exit();
-                    }
-                }
-                echo "The style is: " . (isset($_SESSION["theme"]) ? $_SESSION["theme"] : "Light");
-                ?>
-                </p>
 
-
-            </li>
         </ul>
     </div>
     <!-- -----------------------------------Wat is DevOps?----------------------------------- -->

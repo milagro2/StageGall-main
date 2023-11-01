@@ -1,3 +1,18 @@
+<?php
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['theme'])) {
+        $_SESSION['theme'] = $_POST['theme'];
+        header("Location: stageVerslag.php");
+        exit();
+    }
+}
+
+$theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 

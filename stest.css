@@ -15,8 +15,28 @@ header {
     transition: background-color 0.7s ease, color 1s ease;
 }
 
+/* button style ------------------------------------------------------- */
 
-/* navbar style end ------------------------------------------------------- */
+button {
+    background: #5c5c5cc5;
+    color: #ffffffda;
+    font-size: 0.8vw;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 7px 3px 7px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5c5c5c98;
+}
+
+button.selected {
+    background-color: #ff4900b0;
+}
+
+
+/* navbar style ------------------------------------------------------- */
 
 nav {
     background-color: #53535380;
@@ -42,9 +62,11 @@ nav a {
 }
 
 nav li:hover a {
-    color: #232423;
+    color: #ff4800a0;
+    transition: color 0.7s ease;
 }
 
+/* nav to navbar */
 #navbar {
     transition: ease 0.3s;
     display: flex;
@@ -67,6 +89,7 @@ nav li:hover a {
 #navbar .right-nav {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 
@@ -83,7 +106,7 @@ nav li:hover a {
 
 #navbar .active {
     font-size: 1.3vw;
-    color: #000000dd;
+    color: #ff4800a5;
 }
 
 /* navbar style end ------------------------------------------------------- */
@@ -96,7 +119,7 @@ nav li:hover a {
 /* sticky-block style ------------------------------------------------------- */
 .sticky-block {
     position: sticky;
-    top: 8.3%;
+    top: 7.3%;
     float: right;
     width: 15%;
     height: auto;
@@ -124,15 +147,9 @@ nav li:hover a {
 }
 
 .sticky-block a {
-    color: #000000;
     text-decoration: none;
-    transition: color 1s ease;
+    transition: color 0.5s ease;
 }
-
-.sticky-block a:hover {
-    background-color: #ff55008b;
-}
-
 
 html {
     scroll-behavior: smooth;
@@ -220,10 +237,8 @@ img {
     transition: background-color 0.7s ease;
 }
 
-/* test area */
-
 /* .todo-image, */
-/* test area */
+
 
 /* agile part-------------------------------------------------------------- */
 
@@ -341,7 +356,7 @@ img {
 /* Devops part-------------------------------------------------------------------------------------- */
 .devops-img {
     flex: 1;
-    margin-right: 9%;
+    margin-right: 11%;
 }
 
 .devops-image {
@@ -499,5 +514,3 @@ img {
     justify-content: center;
     align-items: center;
 }
-
-

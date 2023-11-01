@@ -26,7 +26,18 @@ $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
 
         <ul class="right-nav">
             <li><a href="#page-top">Page top</a></li>
-            <li><img src="sun.png" id="sun-moon" class="sun-moon" alt="sun-moon" onclick="toggleBackground()" /></li>
+            <li>
+
+                <form method="post" action="">
+                    <button type="submit" name="theme" value="Dark"
+                        class="<?php echo $_SESSION['theme'] === 'Dark' ? 'selected' : ''; ?>">Dark</button>
+
+                    <button type="submit" name="theme" value="Light"
+                        class="<?php echo $_SESSION['theme'] === 'Light' ? 'selected' : ''; ?>">Light</button>
+                </form>
+
+            </li>
         </ul>
     </nav>
 </body>
+<!-- <li><img src="sun.png" id="sun-moon" class="sun-moon" alt="sun-moon" onclick="toggleBackground()" /></li> -->

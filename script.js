@@ -8,22 +8,26 @@ window.onscroll = function () {
 };
 
 // scroll to location of button press
-window.onload = function () {
-    var scrollPos = sessionStorage.getItem('scrollPos');
-    if (scrollPos) {
-        window.scrollTo(0, scrollPos);
-        sessionStorage.removeItem('scrollPos');
-    }
-};
 
-document.addEventListener('DOMContentLoaded', function() {
-    var themeButtons = document.querySelectorAll('button[name="theme"]');
-    themeButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            sessionStorage.setItem('scrollPos', window.scrollY);
+    window.onload = function () {
+        var scrollPos = sessionStorage.getItem('scrollPos');
+        if (scrollPos) {
+            window.scrollTo(0, scrollPos);
+            sessionStorage.removeItem('scrollPos');
+        }
+    };
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var themeButtons = document.querySelectorAll('button[name="theme"]');
+        themeButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                sessionStorage.setItem('scrollPos', window.scrollY);
+                history.replaceState(null, null, ' ');
+            });
         });
     });
-});
+
+
 
 // dark/light mode
 
