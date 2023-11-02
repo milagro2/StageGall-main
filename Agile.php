@@ -221,6 +221,9 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     <div class="divid"></div>
     <!-- --------------------------------------Scrum end-------------------------------------- -->
     <script src="script.js"></script>
+    <?php if ($theme === 'Hack'): ?>
+        <script src="hack.js"></script>
+    <?php endif; ?>
 
 
     </body=>

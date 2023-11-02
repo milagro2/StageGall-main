@@ -13,7 +13,6 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 ?>
 
 
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -76,48 +75,9 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
         </div>
     </div>
     <div class="divid" id="divid">
-    <!-- Numbers will appear here -->
-</div>
+    </div>
 
-<script>
-    // Generate and append random numbers inside the divid
-    const divid = document.getElementById('divid');
 
-    // Function to create a random number
-    function createRandomNumber() {
-        const number = document.createElement('span');
-        number.innerText = Math.floor(Math.random() * 2);
-        number.style.position = 'absolute';
-        number.style.color = '#00ff00';
-        number.style.opacity = 0;
-        number.style.left = `${Math.random() * 90}%`;
-        number.style.top = `${Math.random() * 90}%`;
-        divid.appendChild(number);
-
-        // Function to fade in/out the number randomly
-        const fadeIn = () => {
-            number.style.transition = 'opacity 1s linear';
-            number.style.opacity = 1;
-            setTimeout(fadeOut, 100);
-        };
-
-        const fadeOut = () => {
-            number.style.transition = 'opacity 1s linear';
-            number.style.opacity = 0;
-            setTimeout(() => {
-                divid.removeChild(number);
-                createRandomNumber();
-            }, 1000);
-        };
-
-        fadeIn();
-    }
-
-    // Initial creation of random numbers
-    for (let i = 0; i < 1000; i++) {
-        createRandomNumber();
-    }
-</script>
 
     <!-- --------------------------------------CI/CD-------------------------------------- -->
     <div class="cicddiv" id="ci-cd-section">
@@ -205,6 +165,9 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     </div>
     <div class="divid"></div>
     <script src="script.js"></script>
+    <?php if ($theme === 'Hack'): ?>
+        <script src="hack.js"></script>
+    <?php endif; ?>
 
 </body>
 

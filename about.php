@@ -38,6 +38,9 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 
 
     <script src="script.js"></script>
+    <?php if ($theme === 'Hack'): ?>
+        <script src="hack.js"></script>
+    <?php endif; ?>
 </body>
 
 </html>

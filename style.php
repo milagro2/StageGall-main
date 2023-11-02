@@ -45,7 +45,7 @@
         echo ".sticky-block a::after { content: ''; position: absolute; width: 100%; height: 2px; background: #00ff00; left: 0; bottom: -5px; transform: scaleX(0); transition: transform 0.5s ease; }";
         echo ".sticky-block a:hover::after { transform: scaleX(1); }";
         echo ".sticky-block { background: #00000085; }";
-        echo "nav a { color: #00ff2b; text-shadow: 0 0 2px #f4ff00; position: relative; }";
+        echo "nav a { color: #00ff2b; text-shadow: 0 0 2px #00ff2b; position: relative; }";
         echo "nav a::after { content: ''; position: absolute; width: 100%; height: 2px; background: #00ff00; left: 0; bottom: -5px; transform: scaleX(0); transition: transform 0.5s ease; }";
         echo "nav a:hover::after { transform: scaleX(1); }";
         echo "#navbar a:hover { color: #00ff00; }";
@@ -66,7 +66,7 @@
         echo "button.selected { color: black; }";
         echo ".divid { background-color: #000000; box-shadow: 0px 0px 17px 1px #00ff00; }";
 
-        
+
     } else {
         // Light-mode styles
         echo ".sticky-block a { color: black; position: relative; }";
