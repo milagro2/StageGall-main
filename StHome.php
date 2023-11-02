@@ -20,7 +20,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stage Moreno Gall&Gall</title>
     <link rel="stylesheet" href="stest.css">
-    <?php include 'style.php'?>
+    <?php include 'style.php' ?>
 </head>
 
 <body>
@@ -29,11 +29,13 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     </header>
     <?php include 'navbar.php' ?>
 
-    <div class="content">
 
-        <p>Welcome!</p>
 
+    <div class="waviy" id="cool">
+        
     </div>
+    
+
 
 
 

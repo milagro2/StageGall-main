@@ -31,7 +31,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     </header>
 
     <?php include 'navbar.php' ?>
-    <div class="sticky-block" id="texT">
+    <div class="sticky-block">
 
         <p>Onderdelen</p>
         <ul>
@@ -48,10 +48,9 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
             <h1>Wat is er to do?</h1>
 
             <ul id="todo-list">
-                <li><input type="checkbox"> Fix website bug: switching pages back <br>to light mode</li>
-                <li><input type="checkbox"> Gespreksverslag in website</li>
-                <li><input type="checkbox"> DevOps in website</li>
-                <li><input type="checkbox"> add -texts togheter for transition & style</li>
+                <li><input type="checkbox">Gespreksverslagen</li>
+                <li><input type="checkbox">Host website for free</li>
+                <li><input type="checkbox">Make 'hacker' coder theme (raining numbers) monospace font</li>
             </ul>
         </div>
         <div class="doto-img">

@@ -27,12 +27,11 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 
 <body>
     <header id="page-top">
-        <div id="header-background" class="light-mode"></div>
         <h1>Agile - Scrum</h1>
     </header>
 
     <?php include 'navbar.php' ?>
-    <div class="sticky-block" id="texT">
+    <div class="sticky-block">
         <p>Onderdelen</p>
         <ul>
             <li><a href="#agile-section">Agile</a></li>

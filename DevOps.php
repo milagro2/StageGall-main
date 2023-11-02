@@ -31,7 +31,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
         <h1>DevOps - CI/CD</h1>
     </header>
     <?php include 'navbar.php' ?>
-    <div class="sticky-block" id="texT">
+    <div class="sticky-block">
         <p>Onderdelen</p>
         <ul>
             <li><a href="#devops-section">Wat is DevOps?</a></li>
@@ -75,7 +75,50 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
             <img class="devops-image" src="Devops.png" alt="DevOps" id="texT">
         </div>
     </div>
-    <div class="divid"></div>
+    <div class="divid" id="divid">
+    <!-- Numbers will appear here -->
+</div>
+
+<script>
+    // Generate and append random numbers inside the divid
+    const divid = document.getElementById('divid');
+
+    // Function to create a random number
+    function createRandomNumber() {
+        const number = document.createElement('span');
+        number.innerText = Math.floor(Math.random() * 2);
+        number.style.position = 'absolute';
+        number.style.color = '#00ff00';
+        number.style.opacity = 0;
+        number.style.left = `${Math.random() * 90}%`;
+        number.style.top = `${Math.random() * 90}%`;
+        divid.appendChild(number);
+
+        // Function to fade in/out the number randomly
+        const fadeIn = () => {
+            number.style.transition = 'opacity 1s linear';
+            number.style.opacity = 1;
+            setTimeout(fadeOut, 100);
+        };
+
+        const fadeOut = () => {
+            number.style.transition = 'opacity 1s linear';
+            number.style.opacity = 0;
+            setTimeout(() => {
+                divid.removeChild(number);
+                createRandomNumber();
+            }, 1000);
+        };
+
+        fadeIn();
+    }
+
+    // Initial creation of random numbers
+    for (let i = 0; i < 1000; i++) {
+        createRandomNumber();
+    }
+</script>
+
     <!-- --------------------------------------CI/CD-------------------------------------- -->
     <div class="cicddiv" id="ci-cd-section">
         <div class="cc-text" id="texT">

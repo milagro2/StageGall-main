@@ -29,14 +29,16 @@ $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
             <li>
 
                 <form method="post" action="">
-                    <button type="submit" name="theme" value="Dark"
-                        class="<?php echo $_SESSION['theme'] === 'Dark' ? 'selected' : ''; ?>">Dark</button>
-
                     <button type="submit" name="theme" value="Light"
                         class="<?php echo $_SESSION['theme'] === 'Light' ? 'selected' : ''; ?>">Light</button>
 
+                    <button type="submit" name="theme" value="Dark"
+                        class="<?php echo $_SESSION['theme'] === 'Dark' ? 'selected' : ''; ?>">Dark</button>
+
                     <button type="submit" name="theme" value="Neon"
                         class="<?php echo $theme === 'Neon' ? 'selected' : ''; ?>">Neon</button>
+                    <button type="submit" name="theme" value="Hack"
+                        class="<?php echo $theme === 'Hack' ? 'selected' : ''; ?>">Hack</button>
 
                 </form>
 
