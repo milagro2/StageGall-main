@@ -28,6 +28,37 @@ function createRandomNumber() {
     fadeIn();
 }
 
-for (let i = 0; i < 1000; i++) {
+for (let i = 1; i < 1000; i++) {
     createRandomNumber();
 }
+
+
+
+
+const elements = document.querySelectorAll('p');
+
+function flipRandomWords(element) {
+    const originalText = element.innerText;
+    const words = originalText.split(' ');
+    const numWordsToFlip = Math.floor(Math.random() * (words.length + 1));
+
+    for (let i = 0; i < numWordsToFlip; i++) {
+        const randomIndex = Math.floor(Math.random() * words.length);
+        const randomWord = words[randomIndex];
+        const flippedWord = randomWord.split('').reverse().join('');
+        words[randomIndex] = flippedWord;
+    }
+
+    element.innerText = words.join(' ');
+
+    setTimeout(() => {
+        element.innerText = originalText;
+        setTimeout(() => {
+            flipRandomWords(element);
+        }, Math.random() * 500);
+    }, 500);
+}
+
+elements.forEach(element => {
+    flipRandomWords(element);
+});

@@ -25,7 +25,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     <?php include 'style.php' ?>
 </head>
 
-<body>
+<body id="divid" >
     <header id="page-top">
         <h1>To do tijdens stage</h1>
     </header>

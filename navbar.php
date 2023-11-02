@@ -2,7 +2,7 @@
 $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
 ?>
 
-<body>
+<body id="divid" >
 
     <nav id="navbar">
         <ul>

@@ -23,7 +23,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     <?php include 'style.php' ?>
 </head>
 
-<body>
+<body id="divid" >
     <header>
         <h1>Stage Moreno Gall&Gall</h1>
     </header>

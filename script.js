@@ -9,23 +9,23 @@ window.onscroll = function () {
 
 // scroll to location of button press
 
-    window.onload = function () {
-        var scrollPos = sessionStorage.getItem('scrollPos');
-        if (scrollPos) {
-            window.scrollTo(0, scrollPos);
-            sessionStorage.removeItem('scrollPos');
-        }
-    };
+window.onload = function () {
+    var scrollPos = sessionStorage.getItem('scrollPos');
+    if (scrollPos) {
+        window.scrollTo(0, scrollPos);
+        sessionStorage.removeItem('scrollPos');
+    }
+};
 
-    document.addEventListener('DOMContentLoaded', function() {
-        var themeButtons = document.querySelectorAll('button[name="theme"]');
-        themeButtons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                sessionStorage.setItem('scrollPos', window.scrollY);
-                history.replaceState(null, null, ' ');
-            });
+document.addEventListener('DOMContentLoaded', function () {
+    var themeButtons = document.querySelectorAll('button[name="theme"]');
+    themeButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            sessionStorage.setItem('scrollPos', window.scrollY);
+            history.replaceState(null, null, ' ');
         });
     });
+});
 
 
 
@@ -103,14 +103,14 @@ window.onscroll = function () {
 
 
 const text = "WELCOME!";
-    const container = document.getElementById('cool');
+const container = document.getElementById('cool');
 
-    for (let i = 0; i < text.length; i++) {
-        const span = document.createElement('span');
-        span.textContent = text[i];
-        span.style.setProperty('--i', i + 1);
-        container.appendChild(span);
-    }
+for (let i = 0; i < text.length; i++) {
+    const span = document.createElement('span');
+    span.textContent = text[i];
+    span.style.setProperty('--i', i + 1);
+    container.appendChild(span);
+}
 
 
 

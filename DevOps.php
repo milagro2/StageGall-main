@@ -24,7 +24,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     <?php include 'style.php' ?>
 </head>
 
-<body>
+<body id="divid">
 
     <header id="page-top">
         <h1>DevOps - CI/CD</h1>
@@ -74,7 +74,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
             <img class="devops-image" src="Devops.png" alt="DevOps" id="texT">
         </div>
     </div>
-    <div class="divid" id="divid">
+    <div class="divid">
     </div>
 
 
@@ -164,11 +164,11 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
         </div>
     </div>
     <div class="divid"></div>
+    <footer></footer>
     <script src="script.js"></script>
     <?php if ($theme === 'Hack'): ?>
         <script src="hack.js"></script>
     <?php endif; ?>
-
 </body>
 
 </html>
