@@ -46,7 +46,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
         <ul>
             <li><a href="#todo-section">To Do</a></li>
             <li><a href="#notes-section">Side Notes</a></li>
-            <li><a href="#done-section">Done</a></li>
+            <li><a href="#done-section">Brick breaker color = multiple hits to break</a></li>
 
         </ul>
     </div>

@@ -60,7 +60,7 @@
         const tableColor = '#3c3c3c';
         const puckColor = '#ff0000';
         const paddleColor = '#0000ff';
-        const brickColor = '#ffffff';
+        const brickColor = 'white';
 
         const tableWidth = 900;
         const tableHeight = 700;
@@ -77,7 +77,7 @@
         let paddleX = tableWidth / 2 - paddleWidth / 2;
         let paddleY = tableHeight - 2 * paddleHeight;
 
-        const brickWidth = 70;
+        const brickWidth = 100;
         const brickHeight = 20;
         const bricks = [];
 
@@ -98,6 +98,10 @@
                 autoPlayButton.textContent = 'Manual Play';
                 intervalId = setInterval(() => {
                     paddleX = puckX - paddleWidth / 2;
+                    if (bricks.every((brick) => brick.broken)) {
+                        startNextGame();
+                        speedUp();
+                    }
                 }, 10);
             } else {
                 autoPlayButton.textContent = 'Auto Play';
@@ -111,34 +115,56 @@
                 puckSpeedY = 5;
                 speedButton.textContent = 'Speed Up';
             } else {
-                puckSpeedX = 25;
-                puckSpeedY = 25;
+                puckSpeedX = 15;
+                puckSpeedY = 15;
                 speedButton.textContent = 'Slow Down';
             }
             speedUp = !speedUp;
         }
 
-        function generateRandomBricks() {
-            let numBricks = Math.floor(Math.random() * 16) + 10; // Random number of bricks (between 10 and 25)
-            let brickY = 0;
 
-            for (let i = 0; i < numBricks; i++) {
-                let brickX = Math.random() * (tableWidth - brickWidth);
-                bricks.push({
-                    x: brickX,
-                    y: brickY,
-                    width: brickWidth,
-                    height: brickHeight,
-                    broken: false,
-                });
+        function generateBrickGrid(rows, columns) {
+            const brickWidthWithPadding = 95;
+            const brickHeightWithPadding = 20;
+            const padding = 5;
 
-                if (brickY + brickHeight < tableHeight) {
-                    brickY += brickHeight + 2;
+            const totalGridWidth = columns * (brickWidthWithPadding + padding) - padding;
+            const initialX = (tableWidth - totalGridWidth) / 2;
+            const initialY = 5;
+
+            for (let i = 0; i < rows; i++) {
+                for (let j = 0; j < columns; j++) {
+                    const brickX = initialX + j * (brickWidthWithPadding + padding);
+                    const brickY = initialY + i * (brickHeightWithPadding + padding);
+
+                    // Generate random color for each brick
+                    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+
+                    bricks.push({
+                        x: brickX,
+                        y: brickY,
+                        width: brickWidthWithPadding - padding,
+                        height: brickHeightWithPadding - padding,
+                        broken: false,
+                        color: randomColor, // Store the randomly generated color for each brick
+                    });
                 }
             }
         }
 
-        generateRandomBricks();
+
+
+
+
+
+        function resetBricks() {
+            bricks.length = 0;
+            generateBrickGrid(5, 9);
+        }
+
+
+        resetBricks();
+
 
         function draw() {
             context.fillStyle = tableColor;
@@ -157,9 +183,9 @@
             context.fillStyle = paddleColor;
             context.fillRect(paddleX, paddleY, paddleWidth, paddleHeight);
 
-            context.fillStyle = brickColor;
             bricks.forEach((brick) => {
                 if (!brick.broken) {
+                    context.fillStyle = brick.color; 
                     context.fillRect(brick.x, brick.y, brick.width, brick.height);
                 }
             });
@@ -196,6 +222,7 @@
                         brick.broken = true;
 
                         if (bricks.every((brick) => brick.broken)) {
+                            gameStarted = false;
                             nextGameButton.style.display = 'block';
                         }
                     }
@@ -213,19 +240,20 @@
 
         function startNextGame() {
             bricks.length = 0;
-            generateRandomBricks();
+            generateBrickGrid(5, 9);
+            gameOverMessage.textContent = '';
             playAgainButton.style.display = 'none';
             nextGameButton.style.display = 'none';
             puckX = tableWidth / 2;
             puckY = tableHeight / 2;
             puckSpeedX = 5;
             puckSpeedY = 5;
-            gameStarted = false;
+            gameStarted = true;
         }
 
         function resetGame() {
             bricks.length = 0;
-            generateRandomBricks();
+            generateBrickGrid(5, 9);
             gameOverMessage.textContent = '';
             playAgainButton.style.display = 'none';
             nextGameButton.style.display = 'none';
