@@ -7,6 +7,7 @@
         echo ".sticky-block a::after { content: ''; position: absolute; width: 100%; height: 2px; background: #ff4900b0; left: 0; bottom: -5px; transform: scaleX(0); transition: transform 0.5s ease; }";
         echo ".sticky-block a:hover::after { transform: scaleX(1); }";
         echo ".sticky-block { background: #00000085; }";
+        echo ".sticky-block p { color: #ff4900b0; }";
         echo "body {";
         echo "background-color: #191919;";
         echo "color: #ffffffba;";
@@ -15,6 +16,8 @@
         echo "#agpri { background-color: #ffffffad; }";
         echo "header { background: black; }";
         echo "header { color: #ff4900b0; }";
+        echo "strong { color: #ffffffe0; }";
+
     } else if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Neon') {
         // Neon-mode styles
         echo ".sticky-block a { color: #00ff2b; text-shadow: 0 0 5px #f4ff00; position: relative; }";
@@ -35,6 +38,7 @@
         echo "#agpri { background-color: #0381ff85; }";
         echo "header { background: black; }";
         echo "h1 { color: #ff0081 !important; text-shadow: 0 0 10px #ff0081; }";
+        echo "strong { color: #f4ff00; text-shadow: 0 0 10px #f4ff00; }";
         echo "button { background: #1a1a1a; color: #00ffd0; text-shadow: 0 0 5px #00ffd0; }";
         echo "button.selected { background-color: red; box-shadow: 0 0 6px red; }";
         echo ".divid { background-color: #ff008100; box-shadow: 0px 0px 17px 1px #ffffff; }";
@@ -73,6 +77,7 @@
         echo ".sticky-block a:hover { color: #ff3a03; }";
         echo ".sticky-block a::after { content: ''; position: absolute; width: 100%; height: 2px; background: #ff3a03; left: 0; bottom: -5px; transform: scaleX(0); transition: transform 0.5s ease; }";
         echo ".sticky-block a:hover::after { transform: scaleX(1); }";
+        echo ".sticky-block p { color: #ff4900b0; }";
         echo "body {";
         echo "background-color: white;";
         echo "color: black;";
@@ -80,6 +85,7 @@
         echo "#texT { background-color: #f4f4f4; }";
         echo "#agpri { background-color: #f4f4f4; }";
         echo "header { background: linear-gradient(to right, #881700, #ff6000, #881700); }";
+        echo "strong { color: #ff4900b0; }";
     }
     ?>
 </style>

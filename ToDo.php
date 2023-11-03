@@ -27,7 +27,16 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 
 <body id="divid" >
     <header id="page-top">
-        <h1>To do tijdens stage</h1>
+    <?php
+        if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Hack') {
+            echo '<div class="glitch-container">';
+            echo '<div class="glitch-text">To do tijdens stage</div>';
+            echo '</div>';
+        }
+        else echo '<h1>To do tijdens stage</h1>';	
+            
+        ?>
+        
     </header>
 
     <?php include 'navbar.php' ?>
@@ -50,7 +59,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
             <ul id="todo-list">
                 <li><input type="checkbox">Gespreksverslagen</li>
                 <li><input type="checkbox">Host website for free</li>
-                <li><input type="checkbox">Make 'hacker' coder theme (raining numbers) monospace font</li>
+                <li><input type="checkbox"></li>
             </ul>
         </div>
         <div class="doto-img">

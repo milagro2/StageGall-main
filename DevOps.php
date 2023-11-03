@@ -27,7 +27,15 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 <body id="divid">
 
     <header id="page-top">
-        <h1>DevOps - CI/CD</h1>
+        <?php
+        if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Hack') {
+            echo '<div class="glitch-container">';
+            echo '<div class="glitch-text">DevOps - CI/CD</div>';
+            echo '</div>';
+        }
+        else echo '<h1>DevOps - CI/CD</h1>';	
+            
+        ?>
     </header>
     <?php include 'navbar.php' ?>
     <div class="sticky-block">
@@ -47,27 +55,39 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
             <h1>Wat is DevOps?</h1>
             <p>
 
-                DevOps is een manier van werken waarbij de focus ligt op <strong>samenwerking en communicatie</strong>
-                tussen de software development en IT-operations teams. Het minimaliseert fouten en versnelt de oplossing
+                DevOps is een manier van werken waarbij de focus ligt op <strong>samenwerking en
+                    communicatie</strong>
+                tussen de software development en IT-operations teams. Het minimaliseert fouten en versnelt de
+                oplossing
                 ervan.
             </p>
             <p> Eerst werkten developer en operators los van elkaar, devs werkten aan nieuwe dingen en de operators
-                gaven feedback over bugs en dingen waaraan gewerkt moest worden. Hierdoor moesten de devs lang wachten
+                gaven feedback over bugs en dingen waaraan gewerkt moest worden. Hierdoor moesten de devs lang
+                wachten
                 voordat ze met deze kregen. Soms werkten de devs al aan volgende projecten terwijl de operators nog
-                feedback aan het geven waren op het vorige project. Hierdoor duurde het heel lang voordat er het product
+                feedback aan het geven waren op het vorige project. Hierdoor duurde het heel lang voordat er het
+                product
                 klaar was.
 
-                Bij DevOps werken deze teams samen en verdelen ze het werk waardoor de problemen sneller kunnen worden
+                Bij DevOps werken deze teams samen en verdelen ze het werk waardoor de problemen sneller kunnen
+                worden
                 gevonden en opgelost en er efficiënter gewerkt kan worden. Door het automatiseren van processen als
-                testen en bouwen hoeven de teams minder handmatig werk te doen. Hierdoor kan er sneller en makkelijker
-                software worden ontwikkeld en problemen worden opgelost. Een mens kan vermoeid raken, afgeleid worden of
+                testen en bouwen hoeven de teams minder handmatig werk te doen. Hierdoor kan er sneller en
+                makkelijker
+                software worden ontwikkeld en problemen worden opgelost. Een mens kan vermoeid raken, afgeleid
+                worden of
                 vergissingen maken maar bij automatisering kan dit niet en is dus meer betrouwbaar. Het is ook meer
-                consistent omdat het geprogrammeerd is steeds hetzelfde te doen, daarnaast bespaar je kosten doordat het
-                minder tijd en mensen werk kost. DevOps is flexibel en heeft een grote schaalbaarheid wat betekent dat
-                er makkelijker aan meerdere projecten kan worden gewerkt als er opeens meer vraag naar iets is. Door het
+                consistent omdat het geprogrammeerd is steeds hetzelfde te doen, daarnaast bespaar je kosten doordat
+                het
+                minder tijd en mensen werk kost. DevOps is flexibel en heeft een grote schaalbaarheid wat betekent
+                dat
+                er makkelijker aan meerdere projecten kan worden gewerkt als er opeens meer vraag naar iets is. Door
+                het
                 voortdurend in de gaten houden van de systemen kunnen de problemen snel worden gevonden en opgelost
-                voordat het te erg wordt. Doordat er zo continue stukjes werkende software kunnen worden geleverd is de
-                klantentevredenheid ook hoger en dat is belangrijk bij DevOps. Door het snellere leveren van producten
+                voordat het te erg wordt. Doordat er zo continue stukjes werkende software kunnen worden geleverd is
+                de
+                klantentevredenheid ook hoger en dat is belangrijk bij DevOps. Door het snellere leveren van
+                producten
                 en updates heb je met DevOps concurrentievoordelen. </p>
         </div>
         <div class="devops-img">
@@ -87,22 +107,25 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
                 CI/CD automatiseert het bouwen, testen en implementeren van software. Het faciliteert frequente
                 integratie, levering en implementatie van software-updates.
             </p>
-            <h2>Continue Integration</h2>
+            <p><strong>Continue Integration</strong></p>
             <p>
-                Ontwikkelaars delen regelmatig code wijzigingen die automatisch worden getest en snel worden opgelost.
+                Ontwikkelaars delen regelmatig code wijzigingen die automatisch worden getest en snel worden
+                opgelost.
             </p>
-            <h2>Continue Delivery</h2>
+            <p><strong>Continue Delivery</strong></p>
             <p>
                 Goedgekeurde code wordt automatisch getest en naar een testomgeving gestuurd.
             </p>
-            <h2>Continue Deployment</h2>
+            <strong>
+                <p>Continue Deployment</p>
+            </strong>
             <p>
                 Goedgekeurde software wordt automatisch naar gebruikers gedistribueerd.
             </p>
             <p>
                 CI/CD minimaliseert handmatige inspanningen, bespaart kosten en verbetert de softwarekwaliteit.
             </p>
-            <h2>Belangrijke Componenten en Concepten van CI/CD</h2>
+            <p><strong>Belangrijke Componenten en Concepten van CI/CD</strong></p>
             <ul>
                 <li><strong>Versiebeheer</strong>: Wijzigingen bijhouden met Git.</li>
                 <li><strong>Geautomatiseerde Builds</strong>: Automatisch bouwen van code.</li>
@@ -158,7 +181,8 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
             <h1>DevOps Tools</h1>
             <p>
                 Er zijn verschillende tools in de DevOps pipeline. Een paar populaire DevOps tools zijn: Jenkins,
-                Docker, Kubernetes, Git, Ansible, en meer. Deze tools helpen bij het automatiseren van opdrachten, het
+                Docker, Kubernetes, Git, Ansible, en meer. Deze tools helpen bij het automatiseren van opdrachten,
+                het
                 beheren van infrastructuur, en zorgen ervoor dat de DevOps processen soepel verlopen.
             </p>
         </div>

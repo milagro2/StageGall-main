@@ -1,39 +1,39 @@
-const divid = document.getElementById('divid');
+// const divid = document.getElementById('divid');
 
-function createRandomNumber() {
-    const number = document.createElement('span');
-    number.innerText = Math.floor(Math.random() * 2);
-    number.style.position = 'absolute';
-    number.style.color = '#00ff00';
-    number.style.opacity = 0;
-    number.style.left = `${Math.random() * 99}%`;
-    number.style.top = `${Math.random() * 555}%`;
-    divid.appendChild(number);
+// function createRandomNumber() {
+//     const number = document.createElement('span');
+//     number.innerText = Math.floor(Math.random() * 2);
+//     number.style.position = 'absolute';
+//     number.style.color = '#00ff00';
+//     number.style.opacity = 0;
+//     number.style.left = `${Math.random() * 99}%`;
+//     number.style.top = `${Math.random() * 555}%`;
+//     divid.appendChild(number);
 
-    const fadeIn = () => {
-        number.style.transition = 'opacity 1s linear';
-        number.style.opacity = 1;
-        setTimeout(fadeOut, 1);
-    };
+//     const fadeIn = () => {
+//         number.style.transition = 'opacity 1s linear';
+//         number.style.opacity = 1;
+//         setTimeout(fadeOut, 1);
+//     };
 
-    const fadeOut = () => {
-        number.style.transition = 'opacity 1s linear';
-        number.style.opacity = 1;
-        setTimeout(() => {
-            divid.removeChild(number);
-            createRandomNumber();
-        }, 200);
-    };
+//     const fadeOut = () => {
+//         number.style.transition = 'opacity 1s linear';
+//         number.style.opacity = 1;
+//         setTimeout(() => {
+//             divid.removeChild(number);
+//             createRandomNumber();
+//         }, 200);
+//     };
 
-    fadeIn();
-}
+//     fadeIn();
+// }
 
-for (let i = 1; i < 1000; i++) {
-    createRandomNumber();
-}
+// for (let i = 1; i < 1000; i++) {
+//     createRandomNumber();
+// }
 
 
-
+//flipping random words --------------------------------
 
 const elements = document.querySelectorAll('p');
 
@@ -62,3 +62,24 @@ function flipRandomWords(element) {
 elements.forEach(element => {
     flipRandomWords(element);
 });
+
+// falling numbers --------------------------------
+function play(userChoice) {
+    var choices = ["rock", "paper", "scissors"];
+    var computerChoice = choices[Math.floor(Math.random() * 3)];
+
+    var result;
+    if (userChoice === computerChoice) {
+        result = "It's a tie!";
+    } else if (
+        (userChoice === "rock" && computerChoice === "scissors") ||
+        (userChoice === "scissors" && computerChoice === "paper") ||
+        (userChoice === "paper" && computerChoice === "rock")
+    ) {
+        result = "You win!";
+    } else {
+        result = "You lose!";
+    }
+
+    document.getElementById("result").innerHTML = `You chose ${userChoice}. Computer chose ${computerChoice}. ${result}`;
+}

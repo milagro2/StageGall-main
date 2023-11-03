@@ -375,10 +375,6 @@ img {
     margin-right: 17%;
 }
 
-.cicddiv h2 {
-    font-size: 1.7vw;
-    color: #ff4900b0;
-}
 
 
 .cicdfot {
@@ -546,4 +542,83 @@ img {
     20% {
         transform: translateY(-20px);
     }
+}
+
+/* raining numbers  */
+
+.glitch-container {
+    perspective: 1000px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glitch-text {
+    font-size: 3rem;
+    color: #00ff00;
+    text-transform: uppercase;
+    position: relative;
+    animation: glitch-animation 1s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-animation {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-5px, 5px);
+    }
+
+    40% {
+        transform: translate(-5px, -5px);
+    }
+
+    60% {
+        transform: translate(5px, 5px);
+    }
+
+    80% {
+        transform: translate(5px, -5px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+/* game */
+
+.air-hockey-table {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background-color: #4a4a4a;
+    margin: 50px auto;
+}
+
+.striker {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: white;
+}
+
+#striker1 {
+    top: 20px;
+}
+
+#striker2 {
+    bottom: 20px;
+}
+
+.puck {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
 }
