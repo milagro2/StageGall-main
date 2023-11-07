@@ -46,7 +46,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
         <ul>
             <li><a href="#todo-section">To Do</a></li>
             <li><a href="#notes-section">Side Notes</a></li>
-            <li><a href="#done-section">Brick breaker color = multiple hits to break</a></li>
+            <li><a href="#done-section">Done</a></li>
 
         </ul>
     </div>
@@ -58,8 +58,9 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 
             <ul id="todo-list">
                 <li><input type="checkbox">Gespreksverslagen</li>
-                <li><input type="checkbox">Host website for free</li>
-                <li><input type="checkbox"></li>
+                <li><input type="checkbox">Gespreken</li>
+                <li><input type="checkbox">pipeline maken</li>
+                <li><input type="checkbox">switch to choose between dutch and english</li>
             </ul>
         </div>
         <div class="doto-img">
@@ -82,9 +83,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
                 <li>Hey</li>
             </ul>
         </div>
-        <div class="bnot-img">
-            <img class="notes-image" src="notes.png" alt="notes">
-        </div>
+       
 
     </div>
 
@@ -102,9 +101,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
                 <li>Hey</li>
             </ul>
         </div>
-        <div class="gedaan-img">
-            <img class="done-image" src="done.png" alt="done">
-        </div>
+       
 
     </div>
 

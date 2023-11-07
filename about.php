@@ -13,6 +13,17 @@
             height: 100vh;
             margin: 0;
         }
+        li {
+
+            list-style: none;
+        }
+        a {
+            color: red;
+            font-size: 2vw;
+        }
+        a:hover {
+            color: green;
+        }
 
         canvas {
             border: 2px solid green;
@@ -37,10 +48,41 @@
         #speedButton {
             margin-bottom: 10px;
         }
+
+        nav {
+            background-color: #53535380;
+            text-align: center;
+            transition: padding 0.3s, position 0, 3s;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0.3%;
+            font-size: 1vw;
+        }
+
+        nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffffba;
+            font-weight: bold;
+        }
+
+        nav li:hover a {
+            color: #ff4800a0;
+            transition: color 0.7s ease;
+        }
     </style>
 </head>
 
 <body>
+
+    <li><a href="StHome.php">Home</a></li>
+
     <canvas id="gameCanvas" width="900" height="700"></canvas>
     <p id="gameOverMessage"></p>
     <button id="playAgainButton" onclick="resetGame()">Play Again</button>
@@ -59,14 +101,16 @@
 
         const tableColor = '#3c3c3c';
         const puckColor = '#ff0000';
+        const greenPuckColor = '#00ff00';
         const paddleColor = '#0000ff';
-        const brickColor = 'white';
 
         const tableWidth = 900;
         const tableHeight = 700;
 
         const paddleWidth = 100;
         const paddleHeight = 10;
+
+        let pucks = [];
 
         let puckX = tableWidth / 2;
         let puckY = tableHeight / 2;
@@ -122,7 +166,6 @@
             speedUp = !speedUp;
         }
 
-
         function generateBrickGrid(rows, columns) {
             const brickWidthWithPadding = 95;
             const brickHeightWithPadding = 20;
@@ -137,8 +180,14 @@
                     const brickX = initialX + j * (brickWidthWithPadding + padding);
                     const brickY = initialY + i * (brickHeightWithPadding + padding);
 
-                    // Generate random color for each brick
-                    const randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+                    // Randomly select color for the brick
+                    let brickColor = "#808080";
+                    const randomValue = Math.random();
+                    if (randomValue < 0.5) {
+                        brickColor = "#00ff00";
+                    } else if (randomValue < 0.4) {
+                        brickColor = "#ff0000";
+                    }
 
                     bricks.push({
                         x: brickX,
@@ -146,25 +195,18 @@
                         width: brickWidthWithPadding - padding,
                         height: brickHeightWithPadding - padding,
                         broken: false,
-                        color: randomColor, // Store the randomly generated color for each brick
+                        color: brickColor,
                     });
                 }
             }
         }
-
-
-
-
-
 
         function resetBricks() {
             bricks.length = 0;
             generateBrickGrid(5, 9);
         }
 
-
         resetBricks();
-
 
         function draw() {
             context.fillStyle = tableColor;
@@ -173,6 +215,11 @@
             if (gameStarted) {
                 puckX += puckSpeedX;
                 puckY += puckSpeedY;
+
+                pucks.forEach((puck) => {
+                    puck.x += puck.speedX;
+                    puck.y += puck.speedY;
+                });
             }
 
             context.fillStyle = puckColor;
@@ -185,9 +232,16 @@
 
             bricks.forEach((brick) => {
                 if (!brick.broken) {
-                    context.fillStyle = brick.color; 
+                    context.fillStyle = brick.color;
                     context.fillRect(brick.x, brick.y, brick.width, brick.height);
                 }
+            });
+
+            pucks.forEach((puck) => {
+                context.fillStyle = greenPuckColor;
+                context.beginPath();
+                context.arc(puck.x, puck.y, 10, 0, 2 * Math.PI);
+                context.fill();
             });
 
             if (puckY + 10 >= tableHeight) {
@@ -219,7 +273,20 @@
                         puckX <= brick.x + brick.width
                     ) {
                         puckSpeedY = -puckSpeedY;
-                        brick.broken = true;
+                        if (brick.color === "#ff0000") {
+                            brick.color = "#808080";
+                        } else if (brick.color === "#00ff00") {
+                            let newPuck = {
+                                x: brick.x + brick.width / 2,
+                                y: brick.y + brick.height + 10,
+                                speedX: Math.random() * 6 - 3,
+                                speedY: Math.random() * 6,
+                            };
+                            pucks.push(newPuck);
+                            brick.broken = true;
+                        } else {
+                            brick.broken = true;
+                        }
 
                         if (bricks.every((brick) => brick.broken)) {
                             gameStarted = false;
@@ -227,6 +294,56 @@
                         }
                     }
                 }
+            });
+
+            pucks.forEach((puck) => {
+                if (puck.y + 10 >= tableHeight) {
+                    pucks = pucks.filter((p) => p !== puck);
+                }
+
+                if (puck.x <= 0 || puck.x >= tableWidth) {
+                    puck.speedX = -puck.speedX;
+                }
+
+                if (
+                    puck.y + 10 >= paddleY &&
+                    puck.x >= paddleX &&
+                    puck.x <= paddleX + paddleWidth
+                ) {
+                    puck.speedY = -puck.speedY;
+                }
+
+                bricks.forEach((brick) => {
+                    if (!brick.broken) {
+                        if (
+                            puck.y - 10 <= brick.y + brick.height &&
+                            puck.y - 10 >= brick.y &&
+                            puck.x >= brick.x &&
+                            puck.x <= brick.x + brick.width
+                        ) {
+                            puck.speedY = -puck.speedY;
+                            if (brick.color === "#ff0000") {
+                                brick.color = "#808080";
+                            } else if (brick.color === "#00ff00") {
+                                let newPuck = {
+                                    x: brick.x + brick.width / 2,
+                                    y: brick.y + brick.height + 10,
+                                    speedX: Math.random() * 6 - 3,
+                                    speedY: Math.random() * 6,
+                                };
+                                pucks.push(newPuck);
+                                brick.broken = true;
+                            } else {
+                                brick.broken = true;
+                            }
+
+                            if (bricks.every((brick) => brick.broken)) {
+                                gameStarted = false;
+                                nextGameButton.style.display = 'block';
+                            }
+                        }
+                    }
+                });
             });
 
             requestAnimationFrame(draw);
@@ -248,6 +365,7 @@
             puckY = tableHeight / 2;
             puckSpeedX = 5;
             puckSpeedY = 5;
+            pucks = [];
             gameStarted = true;
         }
 
@@ -261,6 +379,7 @@
             puckY = tableHeight / 2;
             puckSpeedX = 5;
             puckSpeedY = 5;
+            pucks = [];
             gameStarted = false;
         }
 

@@ -27,14 +27,14 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
 
 <body id="divid">
     <header id="page-top">
-    <?php
+        <?php
         if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Hack') {
             echo '<div class="glitch-container">';
             echo '<div class="glitch-text">Agile - Scrum</div>';
             echo '</div>';
-        }
-        else echo '<h1>Agile - Scrum</h1>';	
-            
+        } else
+            echo '<h1>Agile - Scrum</h1>';
+
         ?>
 
     </header>
@@ -160,10 +160,6 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     <!-- ---------------------------------------Lean & mu's--------------------------------------- -->
     <div class="lemudiv" id="lemu-section">
 
-        <div class="lemum">
-            <img class="lemufot" src="3mus.png" alt="drie Mu's">
-
-        </div>
 
         <div class="lemu-text" id="texT">
 
@@ -173,30 +169,28 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
                 <strong>lean</strong> genoemd. Deze manier van werken is bedacht om de
                 <strong>drie Mu's</strong> te voorkomen. <br>Dit zijn:
             </p>
-            <?php
-            $driemus = [
-                "<strong>Muda</strong> staat voor <strong>verspilling</strong>, het zijn activiteiten of processen 
-                die geen waarde toevoegen aan het product of de klant. ",
+            <p>
 
-                "<strong>Mura</strong> staat voor <strong>ongelijkheid</strong>, dus als er bijvoorbeeld het ene
-                moment veel meer werk is dan op het andere moment.",
+                <strong>Muda</strong> staat voor <strong>verspilling</strong>, het zijn activiteiten of processen
+                die geen waarde toevoegen aan het product of de klant.
+            </p>
 
-                "<strong>Muri</strong> staat voor <strong>overbelasting</strong>, dus wanneer er meer werk wordt
-                verwacht dan mogelijk is wat voor stress kan zorgen."
-            ];
-            ?>
+            <p>
+                <strong>Mura</strong> staat voor <strong>ongelijkheid</strong>, dus als er bijvoorbeeld het ene
+                moment veel meer werk is dan op het andere moment.
+            </p>
+            <p>
+                <strong>Muri</strong> staat voor <strong>overbelasting</strong>, dus wanneer er meer werk wordt
+                verwacht dan mogelijk is wat voor stress kan zorgen.
+            </p>
 
-            <section class="driemus">
 
-                <ol>
-                    <?php foreach ($driemus as $mu): ?>
-                        <li>
-                            <?= $mu; ?>
-                        </li>
-                    <?php endforeach; ?>
-                </ol>
 
-            </section>
+
+
+        </div>
+        <div class="lemum">
+            <img class="lemufot" src="3mus.png" alt="drie Mu's">
 
         </div>
     </div>

@@ -2,7 +2,7 @@
     <?php
     if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Dark') {
         // Dark-mode styles
-        echo ".sticky-block a { color: #ffffffba; text-shadow: 0 0 5px #ff4900b0; position: relative; }";
+        echo ".sticky-block a { color: #ffffffba; position: relative; }";
         echo ".sticky-block a:hover { color: #ff4900b0; }";
         echo ".sticky-block a::after { content: ''; position: absolute; width: 100%; height: 2px; background: #ff4900b0; left: 0; bottom: -5px; transform: scaleX(0); transition: transform 0.5s ease; }";
         echo ".sticky-block a:hover::after { transform: scaleX(1); }";
@@ -16,7 +16,10 @@
         echo "#agpri { background-color: #ffffffad; }";
         echo "header { background: black; }";
         echo "header { color: #ff4900b0; }";
-        echo "strong { color: #ffffffe0; }";
+        echo "strong { color: #843311e8; }";
+        echo "nav a { color: #ffffffba; position: relative; }";
+        echo "nav a::after { content: ''; position: absolute; width: 100%; height: 2px; background: #ff4900b0; left: 0; bottom: -5px; transform: scaleX(0); transition: transform 0.5s ease; }";
+        echo "nav a:hover::after { transform: scaleX(1); }";
 
     } else if (isset($_SESSION['theme']) && $_SESSION['theme'] === 'Neon') {
         // Neon-mode styles
@@ -56,7 +59,7 @@
         echo "#navbar .active { color: #00ff00; }";
         echo "#navbar { background-color: #ff008100; box-shadow: 0px 0px 2px 0px #04ff00; }";
         echo "body {";
-        echo "background-color: #000000;";
+            echo "background-color: #000000;";
         echo "color: #00ff00;";
         echo "font-family: monospace;";
         echo "}";
@@ -69,6 +72,7 @@
         echo "button.selected { background-color: #00ff00; box-shadow: 0 0 6px #00ff00; }";
         echo "button.selected { color: black; }";
         echo ".divid { background-color: #000000; box-shadow: 0px 0px 17px 1px #00ff00; }";
+
 
 
     } else {
@@ -86,6 +90,9 @@
         echo "#agpri { background-color: #f4f4f4; }";
         echo "header { background: linear-gradient(to right, #881700, #ff6000, #881700); }";
         echo "strong { color: #ff4900b0; }";
+        echo "nav a { color: black; position: relative; }";
+        echo "nav a::after { content: ''; position: absolute; width: 100%; height: 2px; background: #ff4900b0; left: 0; bottom: -5px; transform: scaleX(0); transition: transform 0.5s ease; }";
+        echo "nav a:hover::after { transform: scaleX(1); }";
     }
     ?>
 </style>

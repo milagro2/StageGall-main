@@ -2,7 +2,7 @@
 $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
 ?>
 
-<body id="divid" >
+<body id="divid">
 
     <nav id="navbar">
         <ul>
@@ -18,10 +18,10 @@ $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
             </li>
             <li><a href="ToDo.php" <?php if ($current_page == "ToDo.php")
                 echo 'class="active"'; ?>>To do</a></li>
-            <li><a href="stageVerslag.php" <?php if ($current_page == "stageVerslag.php")
+            <!-- <li><a href="stageVerslag.php" <?php if ($current_page == "stageVerslag.php")
                 echo 'class="active"'; ?>>Stage-Verslag</a></li>
             <li><a href="about.php" <?php if ($current_page == "about.php")
-                echo 'class="active"'; ?>>About</a></li>
+                echo 'class="active"'; ?>>About</a></li> -->
         </ul>
 
         <ul class="right-nav">
@@ -43,6 +43,7 @@ $current_page = basename($_SERVER["SCRIPT_FILENAME"]);
                 </form>
 
             </li>
+
         </ul>
     </nav>
 </body>

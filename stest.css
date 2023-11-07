@@ -208,7 +208,9 @@ html {
 .agdiv,
 .scrumdiv,
 .benefitdiv,
-.agprdiv {
+.agprdiv,
+.lemudiv,
+.gesprekdiv {
     display: flex;
     align-items: center;
     padding: 3%;
@@ -225,7 +227,9 @@ html {
 .devops-text,
 .benefits-text,
 .agma-text,
-.tools-text {
+.tools-text,
+.lemu-text,
+.gesprek-text {
     flex: 2;
     margin: 0 15% 0 0;
     background-color: #f5f5f5;
@@ -273,12 +277,11 @@ img {
 
 .agprfots {
     flex: 1;
-    margin-right: 23%;
 }
 
 
 .agprfot {
-    max-width: 140%;
+    max-width: 100%;
     height: auto;
     border-radius: 5%;
 }
@@ -298,29 +301,13 @@ img {
 
 /* lean and mu's part --------------------------------------------- */
 
-.lemudiv {
-    display: flex;
-    align-items: center;
-    padding: 6% 3%;
-    padding-right: 17%;
-    margin: 3%;
-    text-align: right;
-}
 
 .lemum {
     flex: 1;
 }
 
-.lemu-text {
-    flex: 2;
-    margin: 0 0 0 40%;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    padding: 2% 3%;
-}
-
 .lemufot {
-    max-width: 150%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -340,7 +327,7 @@ img {
 /* begin scrum part --------------------------------------------- */
 .scrumfoto {
     flex: 1;
-    margin-right: 17%;
+
 }
 
 .scrumfot {
@@ -438,14 +425,12 @@ img {
 /* to do part ------------------------------------------ */
 .doto-img {
     flex: 1;
-    margin-right: 9%;
+
 }
 
-
 .todo-image {
-    max-width: 130%;
+    max-width: 70%;
     height: auto;
-    padding: 10% 0%;
     background-color: transparent;
     border-radius: 15px;
 }
@@ -456,22 +441,8 @@ img {
     line-height: 1.7vw;
 }
 
-/* to do part end ---------------------------------------- */
 
 /* side notes part --------------------------------------- */
-.not-img {
-    flex: 1;
-    margin-right: 9%;
-}
-
-
-.notes-image {
-    max-width: 130%;
-    height: auto;
-    padding: 10% 0%;
-    background-color: #f5f5f5;
-    border-radius: 15px;
-}
 
 #notes-list {
     font-size: 1.3vw;
@@ -479,41 +450,14 @@ img {
     line-height: 1.7vw;
 }
 
-/* side notes part end ------------------------------------ */
 /* done part ------------------------------------ */
-.done-img {
-    flex: 1;
-    margin-right: 9%;
-}
-
-
-.done-image {
-    max-width: 130%;
-    height: auto;
-    padding: 10% 0%;
-    background-color: #f5f5f5;
-    border-radius: 15px;
-}
-
 #done-list {
     font-size: 1.3vw;
     list-style-type: none;
     line-height: 1.7vw;
 }
 
-/* done part end ------------------------------------ */
-
-.sun-moon {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-/* home test ------------------------------------ */
+/* Welcome home ------------------------------------ */
 
 
 .waviy {
@@ -544,7 +488,7 @@ img {
     }
 }
 
-/* raining numbers  */
+/* glitch text -------------------------------------------------------  */
 
 .glitch-container {
     perspective: 1000px;
@@ -590,35 +534,3 @@ img {
 }
 
 
-/* game */
-
-.air-hockey-table {
-    position: relative;
-    width: 600px;
-    height: 400px;
-    background-color: #4a4a4a;
-    margin: 50px auto;
-}
-
-.striker {
-    position: absolute;
-    width: 100px;
-    height: 20px;
-    background-color: white;
-}
-
-#striker1 {
-    top: 20px;
-}
-
-#striker2 {
-    bottom: 20px;
-}
-
-.puck {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    border-radius: 50%;
-}

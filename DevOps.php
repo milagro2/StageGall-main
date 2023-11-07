@@ -32,9 +32,9 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
             echo '<div class="glitch-container">';
             echo '<div class="glitch-text">DevOps - CI/CD</div>';
             echo '</div>';
-        }
-        else echo '<h1>DevOps - CI/CD</h1>';	
-            
+        } else
+            echo '<h1>DevOps - CI/CD</h1>';
+
         ?>
     </header>
     <?php include 'navbar.php' ?>
