@@ -60,7 +60,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
                 <li><input type="checkbox">Gespreksverslagen</li>
                 <li><input type="checkbox">Gespreken</li>
                 <li><input type="checkbox">pipeline maken</li>
-                <li><input type="checkbox">make navbar sticky</li>
+                <li><input type="checkbox">use jekyll for github pages</li>
             </ul>
         </div>
         <div class="doto-img">

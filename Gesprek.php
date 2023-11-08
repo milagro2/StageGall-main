@@ -56,7 +56,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
                 He started as back-end software engineer and did this for 10 years. He was developing microservices and
                 webservices with C#, .NET Framework, Javascript and Note.js. After that he switched to DevOps
                 disipline. He learned Jenkins and Github Actions and is now mostly working with
-                Microsoft Azure. He is <strong>building and maintaining ci/cd pipelines</strong> for different teams 
+                Microsoft Azure. He is <strong>building and maintaining ci/cd pipelines</strong> for different teams
                 and aplications. Those pipelines build and deploy aplications and infrastructure. The software engineer
                 experience help him understand developer teams. He uses the code languages: C#, Javascript, Phyton, CSS,
                 HTML and XML. He works with the team that Maurice leads.
@@ -78,6 +78,13 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
                 duideljk
                 overzicht in excel en deelt met Maurice. Zorgt ervoor dat er niet te veel geld naar het ene gaat en te
                 weinig naar het andere.
+            </p>
+            <p>
+                Erwin Gloudemans is Head of Gall Retail Tech, hij is verandwoordelijk voor alles wat de klant niet
+                ziet. Hij is het hoofd van vier teams: Supply Chain, HR & Finance, Data en commerce. Hij zorgt er
+                bijvoorbeeld voor dat als iets gekocht word in een winkel dat het vanuit het DC naar de winkel wordt
+                gestuurd.
+                ook people process technologie
             </p>
 
         </div>

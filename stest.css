@@ -212,6 +212,7 @@ html {
 .benefitdiv,
 .agprdiv,
 .lemudiv,
+.toolsdiv,
 .gesprekdiv {
     display: flex;
     align-items: center;
@@ -232,6 +233,7 @@ html {
 .agma-text,
 .tools-text,
 .lemu-text,
+.tools-text,
 .gesprek-text {
     flex: 2;
     margin: 0 15% 0 0;
@@ -348,31 +350,35 @@ img {
 /* Devops part-------------------------------------------------------------------------------------- */
 .devops-img {
     flex: 1;
-    margin-right: 11%;
+    margin-left: -11%;
+
 }
 
 .devops-image {
-    max-width: 140%;
+    max-width: 80%;
     height: auto;
-    padding: 5%;
+    padding: 2%;
     background-color: #f5f5f5;
     border-radius: 15px;
+    margin-left: 36%;
 }
 
 
 /* CI/CD part ---------------------------------------------------- */
 .cicdfoto {
     flex: 1;
-    margin-right: 17%;
+
+}
+
+.cicddiv li {
+    list-style: none;
+    font-size: 1.1vw;
 }
 
 
-
 .cicdfot {
-    max-width: 150%;
+    max-width: 100%;
     height: auto;
-    padding: 3%;
-    margin-left: -53%;
     background-color: #f5f5f5;
     border-radius: 15px;
 }
@@ -382,11 +388,11 @@ img {
 /* benefs part----------------------------------------- */
 .benefits-img {
     flex: 1;
-    margin-right: 17%;
+
 }
 
 .benefits-image {
-    max-width: 175%;
+    max-width: 100%;
     height: auto;
     padding: 5%;
     background-color: #f5f5f5;
@@ -402,22 +408,16 @@ img {
 /* end benefs part---------------------------------- */
 
 /* tools part--------------------------------------- */
-.toolsdiv {
-    display: flex;
-    align-items: center;
-    padding: 6% 3%;
-    margin: 5%;
-    text-align: right;
-}
+
 
 .tools-img {
     flex: 1;
-    margin-right: 17%;
+
 }
 
 
 .tools-image {
-    max-width: 175%;
+    max-width: 100%;
     height: auto;
     padding: 5%;
     background-color: #f5f5f5;
@@ -537,4 +537,73 @@ img {
     }
 }
 
+@media (max-width: 600px) {
+    header {
+        padding: 5%;
+        font-size: 4vw;
+    }
 
+    nav ul {
+        font-size: 3vw;
+    }
+
+    nav li {
+        margin: 0 0;
+    }
+    .cicddiv li {
+
+        font-size: 2vw;
+    }
+    
+
+    button {
+        font-size: 1.5vw;
+    }
+
+    .sticky-block {
+        top: 4.2%;
+        font-size: 2.5vw;
+    }
+
+    .agdiv h1,
+    .manifdiv h1,
+    .lemudiv h1,
+    .scrumdiv h1,
+    .agprdiv h1,
+    .benefitdiv h1,
+    .DevOpsdiv h1,
+    .toolsdiv h1,
+    .cicddiv h1,
+    .tododiv h1,
+    .notesdiv h1,
+    .donediv h1,
+    .gesprekdiv h1 {
+        font-size: 6vw;
+    }
+
+    .agdiv p,
+    .agprdiv p,
+    .manifdiv p,
+    .lemudiv p,
+    .scrumdiv p,
+    .DevOpsdiv p,
+    .toolsdiv p,
+    .cicddiv p,
+    .tododiv p,
+    .notesdiv p,
+    .donediv p,
+    .gesprekdiv p {
+        font-size: 3vw;
+    }
+
+    .agim {
+        margin-left: -19%;
+    }
+
+
+    .agilefot {
+        max-width: 90%;
+        margin-left: 70%;
+    }
+
+}

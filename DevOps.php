@@ -166,6 +166,7 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
                     <?php endforeach; ?>
                 </ul>
             </section>
+            <p></p>
         </div>
         <div class="benefits-img">
             <img class="benefits-image" src="benefits.png" alt="DevOps Benefits" id="texT">
@@ -174,9 +175,6 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
     <div class="divid"></div>
     <!-- -----------------------------------DevOps Tools----------------------------------- -->
     <div class="toolsdiv" id="tools-section">
-        <div class="tools-img">
-            <img class="tools-image" src="tools.png" alt="DevOps Tools" id="texT">
-        </div>
         <div class="tools-text" id="texT">
             <h1>DevOps Tools</h1>
             <p>
@@ -186,9 +184,12 @@ $theme = isset($_SESSION['theme']) ? $_SESSION['theme'] : "Light";
                 beheren van infrastructuur, en zorgen ervoor dat de DevOps processen soepel verlopen.
             </p>
         </div>
+        <div class="tools-img">
+            <img class="tools-image" src="tools.png" alt="DevOps Tools" id="texT">
+        </div>
     </div>
     <div class="divid"></div>
-    <footer></footer>
+
     <script src="script.js"></script>
     <?php if ($theme === 'Hack'): ?>
         <script src="hack.js"></script>
